@@ -14,5 +14,4 @@ int main(void){
   insert_tree(t,5);
 
   print_tree(t->root);
-  // Print 
 }
