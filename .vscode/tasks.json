@@ -9,11 +9,9 @@
                 "isDefault": true
             },
             "windows": {
-                "command": "bash"
+                "command": "make"
             },
             "args": [
-                "-c",
-                "make"
             ],
             "problemMatcher": []
         },
@@ -31,7 +29,7 @@
                 "command": "bash"
             },
             "args": [
-                "run"
+                "run",
             ],
             "problemMatcher": []
         },
@@ -49,7 +47,7 @@
                 "command": "bash"
             },
             "args": [
-                "clean"
+                "clean",
             ],
             "problemMatcher": []
         }
