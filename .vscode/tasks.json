@@ -11,6 +11,9 @@
             "windows": {
                 "command": "make"
             },
+            "linux": {
+                "command": "make"
+            },
             "args": [
             ],
             "problemMatcher": []
@@ -26,7 +29,7 @@
                 "command": "make"
             },
             "linux": {
-                "command": "bash"
+                "command": "make"
             },
             "args": [
                 "run",
@@ -44,7 +47,7 @@
                 "command": "make"
             },
             "linux": {
-                "command": "bash"
+                "command": "make"
             },
             "args": [
                 "clean",
