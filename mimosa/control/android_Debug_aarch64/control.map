@@ -703,33 +703,33 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
  .debug_frame   0x0000000000000448      0x9c8 android_Debug_aarch64/pcm.o
  .debug_frame   0x0000000000000e10      0x1d8 android_Debug_aarch64/control_stub.o
 
-.debug_str      0x0000000000000000     0x3514
+.debug_str      0x0000000000000000     0x34fb
  *(.debug_str)
- .debug_str     0x0000000000000000      0x61f android_Debug_aarch64/mixer.o
-                                        0x71f (size before relaxing)
- .debug_str     0x000000000000061f      0xbc1 android_Debug_aarch64/pcm.o
-                                        0xec4 (size before relaxing)
- .debug_str     0x00000000000011e0      0x508 android_Debug_aarch64/control_stub.o
-                                        0x6be (size before relaxing)
- .debug_str     0x00000000000016e8      0x500 android_Debug_aarch64/audioRecordUtil.o
-                                        0x6c9 (size before relaxing)
- .debug_str     0x0000000000001be8      0x996 android_Debug_aarch64/BinarySemaphoreClient.o
-                                        0xe48 (size before relaxing)
- .debug_str     0x000000000000257e      0x160 android_Debug_aarch64/BinarySemaphoreServer.o
-                                        0xdee (size before relaxing)
- .debug_str     0x00000000000026de      0x114 android_Debug_aarch64/dspBufferUtil.o
-                                        0x28e (size before relaxing)
- .debug_str     0x00000000000027f2       0x5f android_Debug_aarch64/fileSystemUtil.o
-                                        0x32b (size before relaxing)
- .debug_str     0x0000000000002851      0x114 android_Debug_aarch64/sharedMemAudio.o
-                                        0x412 (size before relaxing)
- .debug_str     0x0000000000002965      0x175 android_Debug_aarch64/pcmUtil.o
-                                        0x620 (size before relaxing)
- .debug_str     0x0000000000002ada       0x28 android_Debug_aarch64/main.o
-                                        0xd3f (size before relaxing)
- .debug_str     0x0000000000002b02      0x2b7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_str     0x0000000000000000      0x606 android_Debug_aarch64/mixer.o
+                                        0x706 (size before relaxing)
+ .debug_str     0x0000000000000606      0xbc1 android_Debug_aarch64/pcm.o
+                                        0xeab (size before relaxing)
+ .debug_str     0x00000000000011c7      0x508 android_Debug_aarch64/control_stub.o
+                                        0x6a5 (size before relaxing)
+ .debug_str     0x00000000000016cf      0x500 android_Debug_aarch64/audioRecordUtil.o
+                                        0x6b0 (size before relaxing)
+ .debug_str     0x0000000000001bcf      0x996 android_Debug_aarch64/BinarySemaphoreClient.o
+                                        0xe2f (size before relaxing)
+ .debug_str     0x0000000000002565      0x160 android_Debug_aarch64/BinarySemaphoreServer.o
+                                        0xdd5 (size before relaxing)
+ .debug_str     0x00000000000026c5      0x114 android_Debug_aarch64/dspBufferUtil.o
+                                        0x275 (size before relaxing)
+ .debug_str     0x00000000000027d9       0x5f android_Debug_aarch64/fileSystemUtil.o
+                                        0x312 (size before relaxing)
+ .debug_str     0x0000000000002838      0x114 android_Debug_aarch64/sharedMemAudio.o
+                                        0x3f9 (size before relaxing)
+ .debug_str     0x000000000000294c      0x175 android_Debug_aarch64/pcmUtil.o
+                                        0x607 (size before relaxing)
+ .debug_str     0x0000000000002ac1       0x28 android_Debug_aarch64/main.o
+                                        0xd26 (size before relaxing)
+ .debug_str     0x0000000000002ae9      0x2b7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
                                         0x376 (size before relaxing)
- .debug_str     0x0000000000002db9      0x75b /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .debug_str     0x0000000000002da0      0x75b /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
                                         0xc53 (size before relaxing)
 
 .debug_loc      0x0000000000000000     0x5bee

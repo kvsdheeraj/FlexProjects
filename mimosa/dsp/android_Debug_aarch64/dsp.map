@@ -395,15 +395,15 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
  .debug_frame   0x00000000000000a0      0x120 android_Debug_aarch64/dsp_stub.o
  .debug_frame   0x00000000000001c0      0x370 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/rpcmem/android_Debug_aarch64/ship/rpcmem.a(rpcmem_android.o)
 
-.debug_str      0x0000000000000000      0xb45
+.debug_str      0x0000000000000000      0xb2c
  *(.debug_str)
- .debug_str     0x0000000000000000      0x1be android_Debug_aarch64/dsp_main.o
-                                        0x222 (size before relaxing)
- .debug_str     0x00000000000001be       0x3a android_Debug_aarch64/dsp_test.o
-                                        0x191 (size before relaxing)
- .debug_str     0x00000000000001f8      0x440 android_Debug_aarch64/dsp_stub.o
-                                        0x5d8 (size before relaxing)
- .debug_str     0x0000000000000638      0x50d /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/rpcmem/android_Debug_aarch64/ship/rpcmem.a(rpcmem_android.o)
+ .debug_str     0x0000000000000000      0x1a5 android_Debug_aarch64/dsp_main.o
+                                        0x209 (size before relaxing)
+ .debug_str     0x00000000000001a5       0x3a android_Debug_aarch64/dsp_test.o
+                                        0x178 (size before relaxing)
+ .debug_str     0x00000000000001df      0x440 android_Debug_aarch64/dsp_stub.o
+                                        0x5bf (size before relaxing)
+ .debug_str     0x000000000000061f      0x50d /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/rpcmem/android_Debug_aarch64/ship/rpcmem.a(rpcmem_android.o)
                                         0x677 (size before relaxing)
 
 .debug_loc
