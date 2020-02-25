@@ -1,0 +1,8 @@
+src/test_precision.c:
+inc/typedef.h:
+inc/q6basic_op.h:
+inc/fft_util.h:
+hexagon_Debug_dynamic_toolv83_v60/test_precision.o: src/test_precision.c
+hexagon_Debug_dynamic_toolv83_v60/test_precision.o: inc/typedef.h
+hexagon_Debug_dynamic_toolv83_v60/test_precision.o: inc/q6basic_op.h
+hexagon_Debug_dynamic_toolv83_v60/test_precision.o: inc/fft_util.h

@@ -1,0 +1,38 @@
+
+# This builds the skel library
+BUILD_LIBS += libdsp_skel
+
+# only build the shared object if dynamic option specified in the variant
+ifeq (1,$(V_dynamic))
+BUILD_DLLS = libdsp_skel
+endif
+
+INCDIRS += \
+   inc \
+   src \
+
+libdsp_skel_QAICIDLS = inc/dsp
+libdsp_skel_C_SRCS += $V/dsp_skel
+libdsp_skel.C_SRCS += src/dsp_imp.c
+libdsp_skel.C_SRCS += src/fft.c
+libdsp_skel.C_SRCS += src/ifft.c
+libdsp_skel.C_SRCS += src/fft_util.c
+libdsp_skel.C_SRCS += src/test_precision.c
+libdsp_skel.C_SRCS += src/floatfft.c
+libdsp_skel.C_SRCS += src/bkfir_c.c
+libdsp_skel.C_SRCS += src/iir_cas_bq_c.c
+libdsp_skel.C_SRCS += src/asm_src/flt_iir_cas_bq.S
+libdsp_skel.C_SRCS += src/asm_src/flt_bkfir.S
+
+# quality test
+#BUILD_QEXES += dsp_q
+
+#dsp_q_C_SRCS = src/dsp_test_main src/dsp_test src/dsp_imp src/ifft src/fft src/test_precision src/fft_util src/floatfft src/bkfir_c src/asm_src/flt_bkfir
+#dsp_q_LIBS = rtld rpcmem test_util atomic
+
+# copy final build products to the ship directory
+BUILD_COPIES = \
+   $(DLLS) \
+   $(EXES) \
+   $(LIBS) \
+   $(SHIP_DIR)/ ;

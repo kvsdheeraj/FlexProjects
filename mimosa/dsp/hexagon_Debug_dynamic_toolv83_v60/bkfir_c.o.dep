@@ -1,0 +1,2 @@
+src/bkfir_c.c:
+hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o: src/bkfir_c.c

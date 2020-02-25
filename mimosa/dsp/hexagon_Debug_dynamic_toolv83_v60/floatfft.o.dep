@@ -1,0 +1,4 @@
+src/floatfft.c:
+inc/typedef.h:
+hexagon_Debug_dynamic_toolv83_v60/floatfft.o: src/floatfft.c
+hexagon_Debug_dynamic_toolv83_v60/floatfft.o: inc/typedef.h

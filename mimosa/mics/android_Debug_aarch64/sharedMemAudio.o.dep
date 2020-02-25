@@ -1,0 +1,8 @@
+src/common/src/sharedMemAudio.cpp:
+src/common/include/sharedMemAudio.h:
+src/common/include/audioRecordUtil.h:
+src/common/include/commonDefines.h:
+android_Debug_aarch64/sharedMemAudio.o: src/common/src/sharedMemAudio.cpp
+android_Debug_aarch64/sharedMemAudio.o: src/common/include/sharedMemAudio.h
+android_Debug_aarch64/sharedMemAudio.o: src/common/include/audioRecordUtil.h
+android_Debug_aarch64/sharedMemAudio.o: src/common/include/commonDefines.h

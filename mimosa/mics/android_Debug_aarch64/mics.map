@@ -1,0 +1,779 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                              android_Debug_aarch64/BinarySemaphoreServer.o (operator new[](unsigned long))
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                              /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o) (__libc_fatal)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/mixer.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/pcm.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/mics_stub.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/audioRecordUtil.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/BinarySemaphoreClient.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/BinarySemaphoreServer.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/dspBufferUtil.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/fileSystemUtil.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/sharedMemAudio.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/pcmUtil.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 android_Debug_aarch64/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/liblog.so
+LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libdl.so
+START GROUP
+LOAD android_Debug_aarch64/mixer.o
+LOAD android_Debug_aarch64/pcm.o
+LOAD android_Debug_aarch64/mics_stub.o
+LOAD android_Debug_aarch64/audioRecordUtil.o
+LOAD android_Debug_aarch64/BinarySemaphoreClient.o
+LOAD android_Debug_aarch64/BinarySemaphoreServer.o
+LOAD android_Debug_aarch64/dspBufferUtil.o
+LOAD android_Debug_aarch64/fileSystemUtil.o
+LOAD android_Debug_aarch64/sharedMemAudio.o
+LOAD android_Debug_aarch64/pcmUtil.o
+LOAD android_Debug_aarch64/main.o
+LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/rpcmem/android_Debug_aarch64/rpcmem.a
+LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a
+LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/remote/ship/android_Debug_aarch64//libcdsprpc.so
+END GROUP
+LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libm.so
+LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libc.so
+                0x0000000000000000                PROVIDE (__executable_start, 0x0)
+                0x0000000000000238                . = (0x0 + SIZEOF_HEADERS)
+
+.interp         0x0000000000000238       0x15
+ *(.interp)
+ .interp        0x0000000000000238       0x15 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+
+.note.android.ident
+                0x0000000000000250       0x98
+ .note.android.ident
+                0x0000000000000250       0x98 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x00000000000002e8      0x230
+ *(.hash)
+ .hash          0x00000000000002e8      0x230 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000000518      0x6a8
+ *(.dynsym)
+ .dynsym        0x0000000000000518      0x6a8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+
+.dynstr         0x0000000000000bc0      0x298
+ *(.dynstr)
+ .dynstr        0x0000000000000bc0      0x298 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+
+.gnu.version    0x0000000000000e58       0x8e
+ *(.gnu.version)
+ .gnu.version   0x0000000000000e58       0x8e /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+
+.gnu.version_d  0x0000000000000ee8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000ee8        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+
+.gnu.version_r  0x0000000000000ee8       0x40
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000ee8       0x40 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+
+.rela.dyn       0x0000000000000f28      0x630
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro.local
+                0x0000000000000f28      0x5a0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000000014c8       0x90 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000001558        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+
+.rela.plt       0x0000000000001558      0x510
+ *(.rela.plt)
+ .rela.plt      0x0000000000001558      0x510 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+                0x0000000000001a68                PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                0x0000000000001a68                PROVIDE (__rela_iplt_end, .)
+
+.init
+ *(SORT(.init))
+
+.plt            0x0000000000001a70      0x380
+ *(.plt)
+ .plt           0x0000000000001a70      0x380 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+ *(.iplt)
+
+.text           0x0000000000001df0     0x7f90
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000001df0       0x78 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+                0x0000000000001df0                _start
+                0x0000000000001df8                __atexit_handler_wrapper
+                0x0000000000001e10                do_arm64_start
+                0x0000000000001e50                atexit
+ .text          0x0000000000001e68        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+ .text          0x0000000000001e68     0x16a4 android_Debug_aarch64/mixer.o
+                0x0000000000001e68                mixer_close
+                0x0000000000001fdc                mixer_open
+                0x00000000000023d4                mixer_get_name
+                0x00000000000023ec                mixer_get_num_ctls
+                0x0000000000002418                mixer_get_ctl
+                0x0000000000002470                mixer_get_ctl_by_name
+                0x0000000000002518                mixer_ctl_update
+                0x0000000000002550                mixer_ctl_get_name
+                0x0000000000002580                mixer_ctl_get_type
+                0x0000000000002608                mixer_ctl_get_type_string
+                0x00000000000026b0                mixer_ctl_get_num_values
+                0x00000000000027d8                mixer_ctl_get_percent
+                0x0000000000002844                mixer_ctl_set_percent
+                0x00000000000028ac                mixer_ctl_get_value
+                0x0000000000002a28                mixer_ctl_is_access_tlv_rw
+                0x0000000000002a48                mixer_ctl_get_array
+                0x0000000000002d3c                mixer_ctl_set_value
+                0x0000000000002f14                mixer_ctl_set_array
+                0x00000000000031b0                mixer_ctl_get_range_min
+                0x00000000000031f4                mixer_ctl_get_range_max
+                0x0000000000003238                mixer_ctl_get_num_enums
+                0x0000000000003268                mixer_ctl_get_enum_string
+                0x00000000000032d4                mixer_ctl_set_enum_by_string
+                0x000000000000340c                mixer_subscribe_events
+                0x0000000000003450                mixer_wait_event
+ .text          0x000000000000350c     0x31b8 android_Debug_aarch64/pcm.o
+                0x0000000000003938                pcm_get_buffer_size
+                0x0000000000003950                pcm_get_error
+                0x0000000000003968                pcm_get_subdevice
+                0x0000000000003b0c                pcm_format_to_bits
+                0x0000000000003b4c                pcm_bytes_to_frames
+                0x0000000000003b90                pcm_frames_to_bytes
+                0x0000000000004068                pcm_get_htimestamp
+                0x00000000000041f4                pcm_mmap_get_hw_ptr
+                0x00000000000043a0                pcm_write
+                0x000000000000454c                pcm_read
+                0x00000000000046ac                pcm_params_get
+                0x00000000000047f0                pcm_params_free
+                0x00000000000048d0                pcm_params_get_mask
+                0x0000000000004944                pcm_params_get_min
+                0x00000000000049a8                pcm_params_set_min
+                0x0000000000004a08                pcm_params_get_max
+                0x0000000000004a6c                pcm_params_set_max
+                0x0000000000004d6c                pcm_params_to_string
+                0x0000000000005160                pcm_params_format_test
+                0x00000000000051bc                pcm_close
+                0x0000000000005298                pcm_open
+                0x0000000000005b40                pcm_is_ready
+                0x0000000000005b64                pcm_prepare
+                0x0000000000005be0                pcm_start
+                0x0000000000005c7c                pcm_stop
+                0x0000000000005dd4                pcm_mmap_avail
+                0x0000000000005e8c                pcm_mmap_begin
+                0x0000000000005f7c                pcm_mmap_commit
+                0x0000000000005fb4                pcm_avail_update
+                0x0000000000005fe0                pcm_state
+                0x0000000000006024                pcm_set_avail_min
+                0x0000000000006068                pcm_wait
+                0x0000000000006168                pcm_get_poll_fd
+                0x0000000000006180                pcm_mmap_transfer
+                0x00000000000064c4                pcm_mmap_write
+                0x0000000000006524                pcm_mmap_read
+                0x000000000000657c                pcm_ioctl
+ .text          0x00000000000066c4      0x5bc android_Debug_aarch64/mics_stub.o
+                0x0000000000006758                _mics_atomic_CompareAndExchange
+                0x0000000000006798                _mics_handle
+                0x0000000000006838                mics_skel_invoke
+                0x000000000000697c                mics_sum
+                0x0000000000006ae0                mics_static_sum
+                0x0000000000006c48                mics_iostream_sum
+ .text          0x0000000000006c80      0x530 android_Debug_aarch64/audioRecordUtil.o
+                0x0000000000006c80                createAudioRecord(char const*, char const*, char const*, unsigned long, unsigned long, RecordingMode, unsigned long, unsigned long)
+                0x0000000000006d6c                setAudioRecordControlFileName(audioRecordHandle_t*, char const*)
+                0x0000000000006d94                enableRecording(audioRecordHandle_t*, bool)
+                0x0000000000006db4                setAudioRecordPrefixName(audioRecordHandle_t*, char const*)
+                0x0000000000006de0                setAudioRecordDirectory(audioRecordHandle_t*, char const*)
+                0x0000000000006e0c                getFileNextSeqNumber(audioRecordHandle_t*)
+                0x0000000000006ee0                setRecordingMode(audioRecordHandle_t*, RecordingMode)
+                0x0000000000006f00                recordAudio(audioRecordHandle_t*, int**)
+ .text          0x00000000000071b0      0x1cc android_Debug_aarch64/BinarySemaphoreClient.o
+                0x00000000000071b0                BinarySemaphoreClient::open()
+                0x00000000000071f4                BinarySemaphoreClient::tryToOpenUntilSuccess()
+                0x0000000000007270                BinarySemaphoreClient::setVal(unsigned short, unsigned short)
+                0x00000000000072a4                BinarySemaphoreClient::lock(unsigned short)
+                0x000000000000730c                BinarySemaphoreClient::unlock(unsigned short)
+                0x0000000000007354                BinarySemaphoreClient::close()
+                0x0000000000007364                BinarySemaphoreClient::semaphoreID() const
+ .text          0x000000000000737c      0x334 android_Debug_aarch64/BinarySemaphoreServer.o
+                0x000000000000737c                BinarySemaphoreServer::create(unsigned short)
+                0x00000000000074b4                BinarySemaphoreServer::lockAll()
+                0x0000000000007564                BinarySemaphoreServer::unlockAll()
+                0x0000000000007618                BinarySemaphoreServer::destroy()
+                0x0000000000007680                BinarySemaphoreServer::numOfSemaphores() const
+                0x0000000000007698                BinarySemaphoreServer::semaphoreID() const
+ .text          0x00000000000076b0      0x1dc android_Debug_aarch64/dspBufferUtil.o
+                0x00000000000076b0                dspClearFloatBuffer(float*, unsigned long)
+                0x0000000000007704                dspClearComplexBuffer(floatcomplex *, unsigned long)
+                0x000000000000778c                dspCopyFloatBuffer(float*, float const*, unsigned long)
+                0x00000000000077f0                dspCopyComplexBuffer(floatcomplex *, floatcomplex  const*, unsigned long)
+ .text          0x000000000000788c       0x8c android_Debug_aarch64/fileSystemUtil.o
+                0x000000000000788c                getFilesystemUsage()
+ .text          0x0000000000007918       0x20 android_Debug_aarch64/sharedMemAudio.o
+                0x0000000000007918                createSharedMemAudio()
+                0x0000000000007928                getSharedMemAudio()
+ .text          0x0000000000007938      0x5ec android_Debug_aarch64/pcmUtil.o
+                0x0000000000007938                check_param(pcm_params*, unsigned int, unsigned int, char*, char const*)
+                0x0000000000007a10                sample_is_playable(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                0x0000000000007b74                openOutputAudio(unsigned int, unsigned int, int, unsigned int)
+                0x0000000000007ce8                openInputAudio(unsigned int, unsigned int, int, unsigned int)
+                0x0000000000007e20                splitSamples(int*, int**)
+ .text          0x0000000000007f24       0x80 android_Debug_aarch64/main.o
+                0x0000000000007f24                receiveAudioLoop()
+                0x0000000000007f8c                main
+ .text          0x0000000000007fa4        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .text._Znwm    0x0000000000007fa4       0x34 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000007fa4                operator new(unsigned long)
+ .text._Znam    0x0000000000007fd8       0x34 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000007fd8                operator new[](unsigned long)
+ .text._ZdlPv   0x000000000000800c        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x000000000000800c                operator delete(void*)
+ .text._ZdaPv   0x0000000000008010        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000008010                operator delete[](void*)
+ .text._ZnwmRKSt9nothrow_t
+                0x0000000000008014        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000008014                operator new(unsigned long, std::nothrow_t const&)
+ .text._ZnamRKSt9nothrow_t
+                0x0000000000008018        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000008018                operator new[](unsigned long, std::nothrow_t const&)
+ .text._ZdlPvRKSt9nothrow_t
+                0x000000000000801c        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x000000000000801c                operator delete(void*, std::nothrow_t const&)
+ .text._ZdaPvRKSt9nothrow_t
+                0x0000000000008020        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000008020                operator delete[](void*, std::nothrow_t const&)
+ .text          0x0000000000008024        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .text._ZL14format_integerPcmmc
+                0x0000000000008024      0x134 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .text._ZL22__libc_open_log_socketv
+                0x0000000000008158      0x130 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .text._ZL16__libc_write_logiPKcS0_
+                0x0000000000008288      0x1ec /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .text._ZL24__libc_android_log_eventicPKvm.constprop.0
+                0x0000000000008474      0x100 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .text._Z10SendRepeatI18BufferOutputStreamEvRT_ci
+                0x0000000000008574       0xf4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .text._Z11out_vformatI18BufferOutputStreamEvRT_PKcSt9__va_list
+                0x0000000000008668      0x8c0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .text._Z10SendRepeatI14FdOutputStreamEvRT_ci
+                0x0000000000008f28      0x108 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .text.__libc_format_buffer
+                0x0000000000009030       0xac /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009030                __libc_format_buffer
+ .text.__libc_format_fd
+                0x00000000000090dc      0x83c /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x00000000000090dc                __libc_format_fd
+ .text.__libc_format_log_va_list
+                0x0000000000009918       0xa8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009918                __libc_format_log_va_list
+ .text.__libc_format_log
+                0x00000000000099c0       0x80 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x00000000000099c0                __libc_format_log
+ .text.__libc_android_log_event_int
+                0x0000000000009a40       0x20 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009a40                __libc_android_log_event_int
+ .text.__libc_android_log_event_uid
+                0x0000000000009a60       0x30 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009a60                __libc_android_log_event_uid
+ .text.android_set_abort_message
+                0x0000000000009a90       0xc8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009a90                android_set_abort_message
+ .text._ZL12__libc_fatalPKcSt9__va_list
+                0x0000000000009b58       0xec /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .text.__libc_fatal_no_abort
+                0x0000000000009c44       0x88 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009c44                __libc_fatal_no_abort
+ .text.__libc_fatal
+                0x0000000000009ccc       0x84 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009ccc                __libc_fatal
+ .text.__fortify_chk_fail
+                0x0000000000009d50       0x30 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009d50                __fortify_chk_fail
+ *(.gnu.warning)
+
+.fini
+ *(SORT(.fini))
+                0x0000000000009d80                PROVIDE (__etext, .)
+                0x0000000000009d80                PROVIDE (_etext, .)
+                0x0000000000009d80                PROVIDE (etext, .)
+
+.rodata         0x0000000000009d80      0xca0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000009d80       0xd0 android_Debug_aarch64/mixer.o
+ .rodata        0x0000000000009e50      0x6d0 android_Debug_aarch64/pcm.o
+ .rodata        0x000000000000a520       0x80 android_Debug_aarch64/mics_stub.o
+ .rodata        0x000000000000a5a0       0x30 android_Debug_aarch64/audioRecordUtil.o
+ .rodata        0x000000000000a5d0       0x30 android_Debug_aarch64/BinarySemaphoreClient.o
+ .rodata        0x000000000000a600       0xa8 android_Debug_aarch64/BinarySemaphoreServer.o
+ .rodata        0x000000000000a6a8        0x8 android_Debug_aarch64/dspBufferUtil.o
+ .rodata        0x000000000000a6b0       0x80 android_Debug_aarch64/fileSystemUtil.o
+ .rodata        0x000000000000a730      0x150 android_Debug_aarch64/pcmUtil.o
+ .rodata        0x000000000000a880        0x8 android_Debug_aarch64/main.o
+ .rodata.str1.8
+                0x000000000000a888       0x4b /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                                         0x50 (size before relaxing)
+ *fill*         0x000000000000a8d3        0x5 
+ .rodata._ZSt7nothrow
+                0x000000000000a8d8        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x000000000000a8d8                std::nothrow
+ .rodata._Z11out_vformatI18BufferOutputStreamEvRT_PKcSt9__va_list
+                0x000000000000a8e0       0x38 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .rodata.__libc_format_fd
+                0x000000000000a918       0x24 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ *fill*         0x000000000000a93c        0x4 
+ .rodata.str1.8
+                0x000000000000a940       0xe0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000000aa20      0x1f4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000000aa20      0x1f4 android_Debug_aarch64/audioRecordUtil.o
+
+.eh_frame       0x000000000000ac18      0x9d8
+ *(.eh_frame)
+ .eh_frame      0x000000000000ac18      0x138 android_Debug_aarch64/audioRecordUtil.o
+                                        0x120 (size before relaxing)
+ .eh_frame      0x000000000000ad50       0xd8 android_Debug_aarch64/BinarySemaphoreClient.o
+                                         0xe0 (size before relaxing)
+ .eh_frame      0x000000000000ae28       0xd0 android_Debug_aarch64/BinarySemaphoreServer.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x000000000000aef8       0x60 android_Debug_aarch64/dspBufferUtil.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x000000000000af58       0x28 android_Debug_aarch64/fileSystemUtil.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000000af80       0x30 android_Debug_aarch64/sharedMemAudio.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000000afb0       0xb8 android_Debug_aarch64/pcmUtil.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x000000000000b068       0x50 android_Debug_aarch64/main.o
+                                         0x60 (size before relaxing)
+ .eh_frame      0x000000000000b0b8      0x108 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                                         0xe8 (size before relaxing)
+ .eh_frame      0x000000000000b1c0      0x430 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                                        0x418 (size before relaxing)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x000000000000b5f0                . = (ALIGN (0x10000) - ((0x10000 - .) & 0xffff))
+                0x000000000001b8c0                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+                0x000000000001b8c0                . = ALIGN (0x8)
+                0x000000000001b8c0                PROVIDE (__preinit_array_start, .)
+
+.preinit_array  0x000000000001b8c0       0x10
+ *(.preinit_array)
+ .preinit_array
+                0x000000000001b8c0        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+                0x000000000001b8c0                __PREINIT_ARRAY__
+ .preinit_array
+                0x000000000001b8c8        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+                0x000000000001b8d0                PROVIDE (__preinit_array_end, .)
+                0x000000000001b8d0                PROVIDE (__init_array_start, .)
+
+.init_array     0x000000000001b8d0       0x10
+ *crtbegin*.o(.init_array)
+ .init_array    0x000000000001b8d0        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+                0x000000000001b8d0                __INIT_ARRAY__
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend*.o *crtend.o *crtbegin*.o *crtbegin.o) .ctors)
+ .init_array    0x000000000001b8d8        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+                0x000000000001b8e0                PROVIDE (__init_array_end, .)
+                0x000000000001b8e0                PROVIDE (__fini_array_start, .)
+
+.fini_array     0x000000000001b8e0       0x10
+ *crtbegin*.o(.fini_array)
+ .fini_array    0x000000000001b8e0        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+                0x000000000001b8e0                __FINI_ARRAY__
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend*.o *crtend.o *crtbegin*.o *crtbegin.o) .dtors)
+ .fini_array    0x000000000001b8e8        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+                0x000000000001b8f0                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin*.o(.ctors)
+ *(EXCLUDE_FILE(*crtend*.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin*.o(.dtors)
+ *(EXCLUDE_FILE(*crtend*.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000001b8f0      0x2e0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local
+                0x000000000001b8f0      0x190 android_Debug_aarch64/pcm.o
+ .data.rel.ro.local
+                0x000000000001ba80      0x150 android_Debug_aarch64/mics_stub.o
+                0x000000000001bb98                mics_slim
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x000000000001bbd0      0x230
+ *(.dynamic)
+ .dynamic       0x000000000001bbd0      0x230 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+                0x000000000001bbd0                _DYNAMIC
+
+.got            0x000000000001be00      0x200
+ *(.got.plt)
+ .got.plt       0x000000000001be00      0x1c8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+ *(.igot.plt)
+ *(.got)
+ .got           0x000000000001bfc8       0x38 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+                0x000000000001bfc8                _GLOBAL_OFFSET_TABLE_
+ *(.igot)
+                0x000000000001c000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x000000000001c000      0x100
+                0x000000000001c000                PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000001c000        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+                0x000000000001c000                __dso_handle
+ .data          0x000000000001c008        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+ .data          0x000000000001c008        0x0 android_Debug_aarch64/mixer.o
+ .data          0x000000000001c008       0xf0 android_Debug_aarch64/pcm.o
+ .data          0x000000000001c0f8        0x4 android_Debug_aarch64/mics_stub.o
+ .data          0x000000000001c0fc        0x0 android_Debug_aarch64/audioRecordUtil.o
+ .data          0x000000000001c0fc        0x0 android_Debug_aarch64/BinarySemaphoreClient.o
+ .data          0x000000000001c0fc        0x0 android_Debug_aarch64/BinarySemaphoreServer.o
+ .data          0x000000000001c0fc        0x0 android_Debug_aarch64/dspBufferUtil.o
+ .data          0x000000000001c0fc        0x0 android_Debug_aarch64/fileSystemUtil.o
+ .data          0x000000000001c0fc        0x0 android_Debug_aarch64/sharedMemAudio.o
+ .data          0x000000000001c0fc        0x4 android_Debug_aarch64/pcmUtil.o
+ .data          0x000000000001c100        0x0 android_Debug_aarch64/main.o
+ .data          0x000000000001c100        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .data          0x000000000001c100        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+.data1
+ *(.data1)
+                0x000000000001c100                _edata = .
+                0x000000000001c100                PROVIDE (edata, .)
+                0x000000000001c100                __bss_start = .
+                0x000000000001c100                __bss_start__ = .
+
+.bss            0x000000000001c100       0x40
+ *(.dynbss)
+ .dynbss        0x000000000001c100        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000001c100        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+ .bss           0x000000000001c100        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+ .bss           0x000000000001c100        0x0 android_Debug_aarch64/mixer.o
+ .bss           0x000000000001c100        0x0 android_Debug_aarch64/pcm.o
+ .bss           0x000000000001c100        0x0 android_Debug_aarch64/mics_stub.o
+ .bss           0x000000000001c100        0x0 android_Debug_aarch64/audioRecordUtil.o
+ .bss           0x000000000001c100        0x0 android_Debug_aarch64/BinarySemaphoreClient.o
+ .bss           0x000000000001c100        0x0 android_Debug_aarch64/BinarySemaphoreServer.o
+ .bss           0x000000000001c100        0x0 android_Debug_aarch64/dspBufferUtil.o
+ .bss           0x000000000001c100        0x0 android_Debug_aarch64/fileSystemUtil.o
+ .bss           0x000000000001c100       0x10 android_Debug_aarch64/sharedMemAudio.o
+ .bss           0x000000000001c110        0x0 android_Debug_aarch64/pcmUtil.o
+ .bss           0x000000000001c110        0x0 android_Debug_aarch64/main.o
+ .bss           0x000000000001c110        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .bss           0x000000000001c110        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .bss._ZL16g_abort_msg_lock
+                0x000000000001c110       0x28 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .bss.__abort_message_ptr
+                0x000000000001c138        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x000000000001c138                __abort_message_ptr
+ *(COMMON)
+                0x000000000001c140                . = ALIGN (0x8)
+                0x000000000001c140                _bss_end__ = .
+                0x000000000001c140                __bss_end__ = .
+                0x000000000001c140                . = ALIGN (0x8)
+                0x000000000001c140                . = SEGMENT_START ("ldata-segment", .)
+                0x000000000001c140                . = ALIGN (0x8)
+                0x000000000001c140                __end__ = .
+                0x000000000001c140                _end = .
+                0x000000000001c140                _bss_end__ = .
+                0x000000000001c140                __bss_end__ = .
+                0x000000000001c140                __end__ = .
+                0x000000000001c140                PROVIDE (end, .)
+                0x000000000001c140                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x4c
+ *(.comment)
+ .comment       0x0000000000000000       0x27 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
+                                         0x28 (size before relaxing)
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/mixer.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/pcm.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/mics_stub.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/audioRecordUtil.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/BinarySemaphoreClient.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/BinarySemaphoreServer.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/dspBufferUtil.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/fileSystemUtil.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/sharedMemAudio.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/pcmUtil.o
+ .comment       0x0000000000000027       0x28 android_Debug_aarch64/main.o
+ .comment       0x0000000000000027       0x25 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                                         0x26 (size before relaxing)
+ .comment       0x000000000000004c       0x26 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x3f0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x30 android_Debug_aarch64/mixer.o
+ .debug_aranges
+                0x0000000000000030       0x30 android_Debug_aarch64/pcm.o
+ .debug_aranges
+                0x0000000000000060       0x30 android_Debug_aarch64/mics_stub.o
+ .debug_aranges
+                0x0000000000000090       0x30 android_Debug_aarch64/audioRecordUtil.o
+ .debug_aranges
+                0x00000000000000c0       0x30 android_Debug_aarch64/BinarySemaphoreClient.o
+ .debug_aranges
+                0x00000000000000f0       0x30 android_Debug_aarch64/BinarySemaphoreServer.o
+ .debug_aranges
+                0x0000000000000120       0x30 android_Debug_aarch64/dspBufferUtil.o
+ .debug_aranges
+                0x0000000000000150       0x30 android_Debug_aarch64/fileSystemUtil.o
+ .debug_aranges
+                0x0000000000000180       0x30 android_Debug_aarch64/sharedMemAudio.o
+ .debug_aranges
+                0x00000000000001b0       0x30 android_Debug_aarch64/pcmUtil.o
+ .debug_aranges
+                0x00000000000001e0       0x30 android_Debug_aarch64/main.o
+ .debug_aranges
+                0x0000000000000210       0xa0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_aranges
+                0x00000000000002b0      0x140 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0xdcc8
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000     0x10a5 android_Debug_aarch64/mixer.o
+ .debug_info    0x00000000000010a5     0x2338 android_Debug_aarch64/pcm.o
+ .debug_info    0x00000000000033dd     0x104a android_Debug_aarch64/mics_stub.o
+ .debug_info    0x0000000000004427      0xb06 android_Debug_aarch64/audioRecordUtil.o
+ .debug_info    0x0000000000004f2d     0x166e android_Debug_aarch64/BinarySemaphoreClient.o
+ .debug_info    0x000000000000659b     0x159e android_Debug_aarch64/BinarySemaphoreServer.o
+ .debug_info    0x0000000000007b39      0x260 android_Debug_aarch64/dspBufferUtil.o
+ .debug_info    0x0000000000007d99      0x659 android_Debug_aarch64/fileSystemUtil.o
+ .debug_info    0x00000000000083f2      0x7ce android_Debug_aarch64/sharedMemAudio.o
+ .debug_info    0x0000000000008bc0      0x733 android_Debug_aarch64/pcmUtil.o
+ .debug_info    0x00000000000092f3     0x170e android_Debug_aarch64/main.o
+ .debug_info    0x000000000000aa01      0x400 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_info    0x000000000000ae01     0x2ec7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+.debug_abbrev   0x0000000000000000     0x1f4f
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x2e1 android_Debug_aarch64/mixer.o
+ .debug_abbrev  0x00000000000002e1      0x34d android_Debug_aarch64/pcm.o
+ .debug_abbrev  0x000000000000062e      0x1f2 android_Debug_aarch64/mics_stub.o
+ .debug_abbrev  0x0000000000000820      0x1fc android_Debug_aarch64/audioRecordUtil.o
+ .debug_abbrev  0x0000000000000a1c      0x2ea android_Debug_aarch64/BinarySemaphoreClient.o
+ .debug_abbrev  0x0000000000000d06      0x2d4 android_Debug_aarch64/BinarySemaphoreServer.o
+ .debug_abbrev  0x0000000000000fda       0x8f android_Debug_aarch64/dspBufferUtil.o
+ .debug_abbrev  0x0000000000001069      0x17f android_Debug_aarch64/fileSystemUtil.o
+ .debug_abbrev  0x00000000000011e8      0x19b android_Debug_aarch64/sharedMemAudio.o
+ .debug_abbrev  0x0000000000001383      0x152 android_Debug_aarch64/pcmUtil.o
+ .debug_abbrev  0x00000000000014d5      0x315 android_Debug_aarch64/main.o
+ .debug_abbrev  0x00000000000017ea      0x17e /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_abbrev  0x0000000000001968      0x5e7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+.debug_line     0x0000000000000000     0x3e91
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x4b5 android_Debug_aarch64/mixer.o
+ .debug_line    0x00000000000004b5      0x87b android_Debug_aarch64/pcm.o
+ .debug_line    0x0000000000000d30      0x2a5 android_Debug_aarch64/mics_stub.o
+ .debug_line    0x0000000000000fd5      0x3d7 android_Debug_aarch64/audioRecordUtil.o
+ .debug_line    0x00000000000013ac      0x673 android_Debug_aarch64/BinarySemaphoreClient.o
+ .debug_line    0x0000000000001a1f      0x637 android_Debug_aarch64/BinarySemaphoreServer.o
+ .debug_line    0x0000000000002056      0x169 android_Debug_aarch64/dspBufferUtil.o
+ .debug_line    0x00000000000021bf      0x307 android_Debug_aarch64/fileSystemUtil.o
+ .debug_line    0x00000000000024c6      0x33b android_Debug_aarch64/sharedMemAudio.o
+ .debug_line    0x0000000000002801      0x34c android_Debug_aarch64/pcmUtil.o
+ .debug_line    0x0000000000002b4d      0x5b7 android_Debug_aarch64/main.o
+ .debug_line    0x0000000000003104      0x1d9 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_line    0x00000000000032dd      0xbb4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+.debug_frame    0x0000000000000000      0xfe8
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x448 android_Debug_aarch64/mixer.o
+ .debug_frame   0x0000000000000448      0x9c8 android_Debug_aarch64/pcm.o
+ .debug_frame   0x0000000000000e10      0x1d8 android_Debug_aarch64/mics_stub.o
+
+.debug_str      0x0000000000000000     0x3525
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x61c android_Debug_aarch64/mixer.o
+                                        0x71c (size before relaxing)
+ .debug_str     0x000000000000061c      0xbc1 android_Debug_aarch64/pcm.o
+                                        0xec1 (size before relaxing)
+ .debug_str     0x00000000000011dd      0x4ea android_Debug_aarch64/mics_stub.o
+                                        0x69d (size before relaxing)
+ .debug_str     0x00000000000016c7      0x500 android_Debug_aarch64/audioRecordUtil.o
+                                        0x6c6 (size before relaxing)
+ .debug_str     0x0000000000001bc7      0x996 android_Debug_aarch64/BinarySemaphoreClient.o
+                                        0xe45 (size before relaxing)
+ .debug_str     0x000000000000255d      0x160 android_Debug_aarch64/BinarySemaphoreServer.o
+                                        0xdeb (size before relaxing)
+ .debug_str     0x00000000000026bd      0x114 android_Debug_aarch64/dspBufferUtil.o
+                                        0x28b (size before relaxing)
+ .debug_str     0x00000000000027d1       0x5f android_Debug_aarch64/fileSystemUtil.o
+                                        0x328 (size before relaxing)
+ .debug_str     0x0000000000002830      0x10f android_Debug_aarch64/sharedMemAudio.o
+                                        0x40f (size before relaxing)
+ .debug_str     0x000000000000293f      0x175 android_Debug_aarch64/pcmUtil.o
+                                        0x61d (size before relaxing)
+ .debug_str     0x0000000000002ab4       0x5f android_Debug_aarch64/main.o
+                                        0xd73 (size before relaxing)
+ .debug_str     0x0000000000002b13      0x2b7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                                        0x376 (size before relaxing)
+ .debug_str     0x0000000000002dca      0x75b /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                                        0xc53 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x5bee
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x25a /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_loc     0x000000000000025a     0x5994 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000     0x17a0
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0xf0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_ranges  0x00000000000000f0     0x16b0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+
+.debug_macro
+ *(.debug_macro)
+
+.ARM.attributes
+ *(.ARM.attributes)
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+ *(.mdebug.*)
+OUTPUT(android_Debug_aarch64/mics elf64-littleaarch64)

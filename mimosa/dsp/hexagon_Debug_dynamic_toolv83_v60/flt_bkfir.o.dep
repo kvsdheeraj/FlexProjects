@@ -1,0 +1,2 @@
+src/asm_src/flt_bkfir.S:
+hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o: src/asm_src/flt_bkfir.S

@@ -1,0 +1,4 @@
+src/common/src/mixer.c:
+src/common/include/asoundlib.h:
+android_Debug_aarch64/mixer.o: src/common/src/mixer.c
+android_Debug_aarch64/mixer.o: src/common/include/asoundlib.h

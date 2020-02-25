@@ -1,0 +1,14 @@
+hexagon_Debug_dynamic_toolv83_v60/dsp_skel.c:
+hexagon_Debug_dynamic_toolv83_v60/dsp.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdErr.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/remote/ship/hexagon_Debug_dynamic_toolv83_v60/remote.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdDef.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/sys/types.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/pthread_types.h:
+hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o: hexagon_Debug_dynamic_toolv83_v60/dsp_skel.c
+hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o: hexagon_Debug_dynamic_toolv83_v60/dsp.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdErr.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/remote/ship/hexagon_Debug_dynamic_toolv83_v60/remote.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdDef.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/sys/types.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/pthread_types.h

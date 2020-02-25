@@ -1,0 +1,4 @@
+src/common/src/pcm.c:
+src/common/include/asoundlib.h:
+android_Debug_aarch64/pcm.o: src/common/src/pcm.c
+android_Debug_aarch64/pcm.o: src/common/include/asoundlib.h

@@ -1,0 +1,8 @@
+src/common/src/pcmUtil.cpp:
+src/common/include/pcmUtil.h:
+src/common/include/asoundlib.h:
+src/common/include/commonDefines.h:
+android_Debug_aarch64/pcmUtil.o: src/common/src/pcmUtil.cpp
+android_Debug_aarch64/pcmUtil.o: src/common/include/pcmUtil.h
+android_Debug_aarch64/pcmUtil.o: src/common/include/asoundlib.h
+android_Debug_aarch64/pcmUtil.o: src/common/include/commonDefines.h

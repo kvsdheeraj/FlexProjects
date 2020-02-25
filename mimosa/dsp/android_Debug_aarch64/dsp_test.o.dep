@@ -1,0 +1,10 @@
+src/dsp_test.c:
+android_Debug_aarch64/dsp.h:
+src/dsp_test.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/rpcmem/android_Debug_aarch64/ship/rpcmem.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdDef.h:
+android_Debug_aarch64/dsp_test.o: src/dsp_test.c
+android_Debug_aarch64/dsp_test.o: android_Debug_aarch64/dsp.h
+android_Debug_aarch64/dsp_test.o: src/dsp_test.h
+android_Debug_aarch64/dsp_test.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/rpcmem/android_Debug_aarch64/ship/rpcmem.h
+android_Debug_aarch64/dsp_test.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdDef.h

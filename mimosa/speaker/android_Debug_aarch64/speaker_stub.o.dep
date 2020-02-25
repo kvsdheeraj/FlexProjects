@@ -1,0 +1,10 @@
+android_Debug_aarch64/speaker_stub.c:
+android_Debug_aarch64/speaker.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdErr.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/remote/ship/android_Debug_aarch64/remote.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdDef.h:
+android_Debug_aarch64/speaker_stub.o: android_Debug_aarch64/speaker_stub.c
+android_Debug_aarch64/speaker_stub.o: android_Debug_aarch64/speaker.h
+android_Debug_aarch64/speaker_stub.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdErr.h
+android_Debug_aarch64/speaker_stub.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/remote/ship/android_Debug_aarch64/remote.h
+android_Debug_aarch64/speaker_stub.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdDef.h

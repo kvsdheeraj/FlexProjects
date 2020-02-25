@@ -1,0 +1,15 @@
+-rsc
+android_Debug_aarch64/control.a
+android_Debug_aarch64/mixer.o
+android_Debug_aarch64/pcm.o
+android_Debug_aarch64/control_stub.o
+android_Debug_aarch64/audioRecordUtil.o
+android_Debug_aarch64/BinarySemaphoreClient.o
+android_Debug_aarch64/BinarySemaphoreServer.o
+android_Debug_aarch64/dspBufferUtil.o
+android_Debug_aarch64/fileSystemUtil.o
+android_Debug_aarch64/sharedMemAudio.o
+android_Debug_aarch64/pcmUtil.o
+android_Debug_aarch64/main.o
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/rpcmem/android_Debug_aarch64/rpcmem.a
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a

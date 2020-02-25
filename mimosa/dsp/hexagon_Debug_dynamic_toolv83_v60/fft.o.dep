@@ -1,0 +1,8 @@
+src/fft.c:
+inc/q6basic_op.h:
+inc/fft_util.h:
+inc/typedef.h:
+hexagon_Debug_dynamic_toolv83_v60/fft.o: src/fft.c
+hexagon_Debug_dynamic_toolv83_v60/fft.o: inc/q6basic_op.h
+hexagon_Debug_dynamic_toolv83_v60/fft.o: inc/fft_util.h
+hexagon_Debug_dynamic_toolv83_v60/fft.o: inc/typedef.h

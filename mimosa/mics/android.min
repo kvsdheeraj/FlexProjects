@@ -1,0 +1,56 @@
+ifeq ($(CDSP_FLAG), 1) 
+	LIB_DSPRPC = libcdsprpc
+else ifeq ($(MDSP_FLAG), 1) 
+	LIB_DSPRPC = libmdsprpc
+else ifeq ($(SLPI_FLAG), 1) 
+	LIB_DSPRPC = libsdsprpc
+else
+	LIB_DSPRPC = libadsprpc
+endif
+
+$(info ************  LIB=$(LIB_DSPRPC) ************)
+
+INCDIRS += \
+   inc \
+   src \
+   src/common/include \
+
+# only build the shared object if dynamic option specified in V
+ifeq (1,$(V_dynamic))
+BUILD_DLLS = mics
+endif
+
+BUILD_LIBS = mics
+
+mics_C_SRCS += \
+   src/common/src/mixer \
+   src/common/src/pcm \
+
+mics_CPP_SRCS += \
+   src/common/src/audioRecordUtil \
+   src/common/src/BinarySemaphoreClient \
+   src/common/src/BinarySemaphoreServer \
+   src/common/src/dspBufferUtil \
+   src/common/src/fileSystemUtil \
+   src/common/src/sharedMemAudio \
+   src/common/src/pcmUtil \
+
+mics_CXX_FLAGS += -fexceptions
+
+# stand-alone mics executable
+BUILD_EXES+=mics
+mics_QAICIDLS += inc/mics
+mics_C_SRCS += $V/mics_stub
+mics_CPP_SRCS += src/mics/src/main
+mics_LIBS += rpcmem 
+mics_LIBS += $(HEXAGON_SDK_ROOT)/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a
+mics_DLLS += $(LIB_DSPRPC) 
+mics_LD_FLAGS += -llog -ldl
+mics_DEFINES += ANDROID 
+
+# copy final build products to the ship directory
+BUILD_COPIES = \
+   $(DLLS) \
+   $(EXES) \
+   $(LIBS) \
+   $(SHIP_DIR)/ ;

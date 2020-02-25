@@ -1,0 +1,4 @@
+src/common/src/BinarySemaphoreClient.cpp:
+src/common/include/BinarySemaphoreClient.h:
+android_Debug_aarch64/BinarySemaphoreClient.o: src/common/src/BinarySemaphoreClient.cpp
+android_Debug_aarch64/BinarySemaphoreClient.o: src/common/include/BinarySemaphoreClient.h

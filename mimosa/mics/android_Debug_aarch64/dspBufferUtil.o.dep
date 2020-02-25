@@ -1,0 +1,4 @@
+src/common/src/dspBufferUtil.cpp:
+src/common/include/dspBufferUtil.h:
+android_Debug_aarch64/dspBufferUtil.o: src/common/src/dspBufferUtil.cpp
+android_Debug_aarch64/dspBufferUtil.o: src/common/include/dspBufferUtil.h

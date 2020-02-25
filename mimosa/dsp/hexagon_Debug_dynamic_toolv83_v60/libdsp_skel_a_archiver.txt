@@ -1,0 +1,13 @@
+-rsc
+hexagon_Debug_dynamic_toolv83_v60/libdsp_skel.a
+hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o
+hexagon_Debug_dynamic_toolv83_v60/fft.o
+hexagon_Debug_dynamic_toolv83_v60/ifft.o
+hexagon_Debug_dynamic_toolv83_v60/fft_util.o
+hexagon_Debug_dynamic_toolv83_v60/test_precision.o
+hexagon_Debug_dynamic_toolv83_v60/floatfft.o
+hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o
+hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o
+hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o
+hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o

@@ -1,0 +1,6 @@
+src/common/src/audioRecordUtil.cpp:
+src/common/include/audioRecordUtil.h:
+src/common/include/fileSystemUtil.h:
+android_Debug_aarch64/audioRecordUtil.o: src/common/src/audioRecordUtil.cpp
+android_Debug_aarch64/audioRecordUtil.o: src/common/include/audioRecordUtil.h
+android_Debug_aarch64/audioRecordUtil.o: src/common/include/fileSystemUtil.h

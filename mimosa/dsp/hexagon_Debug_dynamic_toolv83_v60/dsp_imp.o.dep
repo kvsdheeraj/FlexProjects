@@ -1,0 +1,34 @@
+src/dsp_imp.c:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/fcntl.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/sys/types.h:
+inc/typedef.h:
+inc/fft_util.h:
+inc/fft.h:
+inc/fftwiddles.h:
+inc/q6basic_op.h:
+inc/data_macros.h:
+inc/flt_bkfir.h:
+inc/flt_iir_cas_bq.h:
+src/verify.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/HAP_farf.h:
+hexagon_Debug_dynamic_toolv83_v60/dsp.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/pthread_types.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdDef.h:
+/home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/HAP_debug.h:
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: src/dsp_imp.c
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/fcntl.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/sys/types.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: inc/typedef.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: inc/fft_util.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: inc/fft.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: inc/fftwiddles.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: inc/q6basic_op.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: inc/data_macros.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: inc/flt_bkfir.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: inc/flt_iir_cas_bq.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: src/verify.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/HAP_farf.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: hexagon_Debug_dynamic_toolv83_v60/dsp.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/libs/common/qurt/ADSPv60MP/include/posix/pthread_types.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/stddef/AEEStdDef.h
+hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o: /home/flex/Qualcomm/Hexagon_SDK/3.4.3/incs/HAP_debug.h

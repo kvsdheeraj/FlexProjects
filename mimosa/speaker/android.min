@@ -1,0 +1,56 @@
+ifeq ($(CDSP_FLAG), 1) 
+	LIB_DSPRPC = libcdsprpc
+else ifeq ($(MDSP_FLAG), 1) 
+	LIB_DSPRPC = libmdsprpc
+else ifeq ($(SLPI_FLAG), 1) 
+	LIB_DSPRPC = libsdsprpc
+else
+	LIB_DSPRPC = libadsprpc
+endif
+
+$(info ************  LIB=$(LIB_DSPRPC) ************)
+
+INCDIRS += \
+   inc \
+   src \
+   src/common/include \
+
+# only build the shared object if dynamic option specified in V
+ifeq (1,$(V_dynamic))
+BUILD_DLLS = speaker
+endif
+
+BUILD_LIBS = speaker
+
+speaker_C_SRCS += \
+   src/common/src/mixer \
+   src/common/src/pcm \
+
+speaker_CPP_SRCS += \
+   src/common/src/audioRecordUtil \
+   src/common/src/BinarySemaphoreClient \
+   src/common/src/BinarySemaphoreServer \
+   src/common/src/dspBufferUtil \
+   src/common/src/fileSystemUtil \
+   src/common/src/sharedMemAudio \
+   src/common/src/pcmUtil \
+
+speaker_CXX_FLAGS += -fexceptions
+
+# stand-alone speaker executable
+BUILD_EXES+=speaker
+speaker_QAICIDLS += inc/speaker
+speaker_C_SRCS += $V/speaker_stub
+speaker_CPP_SRCS += src/speaker/src/main
+speaker_LIBS += rpcmem 
+speaker_LIBS += $(HEXAGON_SDK_ROOT)/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a
+speaker_DLLS += $(LIB_DSPRPC) 
+speaker_LD_FLAGS += -llog -ldl
+speaker_DEFINES += ANDROID 
+
+# copy final build products to the ship directory
+BUILD_COPIES = \
+   $(DLLS) \
+   $(EXES) \
+   $(LIBS) \
+   $(SHIP_DIR)/ ;

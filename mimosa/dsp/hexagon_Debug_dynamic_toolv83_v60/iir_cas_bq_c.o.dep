@@ -1,0 +1,2 @@
+src/iir_cas_bq_c.c:
+hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o: src/iir_cas_bq_c.c

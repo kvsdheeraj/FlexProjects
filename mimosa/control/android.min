@@ -1,0 +1,56 @@
+ifeq ($(CDSP_FLAG), 1) 
+	LIB_DSPRPC = libcdsprpc
+else ifeq ($(MDSP_FLAG), 1) 
+	LIB_DSPRPC = libmdsprpc
+else ifeq ($(SLPI_FLAG), 1) 
+	LIB_DSPRPC = libsdsprpc
+else
+	LIB_DSPRPC = libadsprpc
+endif
+
+$(info ************  LIB=$(LIB_DSPRPC) ************)
+
+INCDIRS += \
+   inc \
+   src \
+   src/common/include \
+
+# only build the shared object if dynamic option specified in V
+ifeq (1,$(V_dynamic))
+BUILD_DLLS = control
+endif
+
+BUILD_LIBS = control
+
+control_C_SRCS += \
+   src/common/src/mixer \
+   src/common/src/pcm \
+
+control_CPP_SRCS += \
+   src/common/src/audioRecordUtil \
+   src/common/src/BinarySemaphoreClient \
+   src/common/src/BinarySemaphoreServer \
+   src/common/src/dspBufferUtil \
+   src/common/src/fileSystemUtil \
+   src/common/src/sharedMemAudio \
+   src/common/src/pcmUtil \
+
+control_CXX_FLAGS += -fexceptions
+
+# stand-alone control executable
+BUILD_EXES+=control
+control_QAICIDLS += inc/control
+control_C_SRCS += $V/control_stub
+control_CPP_SRCS += src/control/src/main
+control_LIBS += rpcmem
+control_LIBS += $(HEXAGON_SDK_ROOT)/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a
+control_DLLS += $(LIB_DSPRPC) 
+control_LD_FLAGS += -llog -ldl
+control_DEFINES += ANDROID 
+
+# copy final build products to the ship directory
+BUILD_COPIES = \
+   $(DLLS) \
+   $(EXES) \
+   $(LIBS) \
+   $(SHIP_DIR)/ ;

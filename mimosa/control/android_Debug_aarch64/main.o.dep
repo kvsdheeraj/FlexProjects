@@ -1,0 +1,14 @@
+src/control/src/main.cpp:
+src/common/include/pcmUtil.h:
+src/common/include/commonDefines.h:
+src/common/include/BinarySemaphoreServer.h:
+src/common/include/BinarySemaphoreClient.h:
+src/common/include/audioRecordUtil.h:
+src/common/include/asoundlib.h:
+android_Debug_aarch64/main.o: src/control/src/main.cpp
+android_Debug_aarch64/main.o: src/common/include/pcmUtil.h
+android_Debug_aarch64/main.o: src/common/include/commonDefines.h
+android_Debug_aarch64/main.o: src/common/include/BinarySemaphoreServer.h
+android_Debug_aarch64/main.o: src/common/include/BinarySemaphoreClient.h
+android_Debug_aarch64/main.o: src/common/include/audioRecordUtil.h
+android_Debug_aarch64/main.o: src/common/include/asoundlib.h
