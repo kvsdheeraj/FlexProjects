@@ -148,7 +148,7 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
  .plt           0x0000000000001a70      0x380 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o
  *(.iplt)
 
-.text           0x0000000000001df0     0x7f90
+.text           0x0000000000001df0     0x8014
  *(.text.unlikely .text.*_unlikely .text.unlikely.*)
  *(.text.exit .text.exit.*)
  *(.text.startup .text.startup.*)
@@ -265,146 +265,147 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
  .text          0x0000000000007918       0x20 android_Debug_aarch64/sharedMemAudio.o
                 0x0000000000007918                createSharedMemAudio()
                 0x0000000000007928                getSharedMemAudio()
- .text          0x0000000000007938      0x5ec android_Debug_aarch64/pcmUtil.o
+ .text          0x0000000000007938      0x670 android_Debug_aarch64/pcmUtil.o
                 0x0000000000007938                check_param(pcm_params*, unsigned int, unsigned int, char*, char const*)
                 0x0000000000007a10                sample_is_playable(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
                 0x0000000000007b74                openOutputAudio(unsigned int, unsigned int, int, unsigned int)
                 0x0000000000007ce8                openInputAudio(unsigned int, unsigned int, int, unsigned int)
-                0x0000000000007e20                splitSamples(int*, int**)
- .text          0x0000000000007f24       0x80 android_Debug_aarch64/main.o
-                0x0000000000007f24                receiveAudioLoop()
-                0x0000000000007f8c                main
- .text          0x0000000000007fa4        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
- .text._Znwm    0x0000000000007fa4       0x34 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
-                0x0000000000007fa4                operator new(unsigned long)
- .text._Znam    0x0000000000007fd8       0x34 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
-                0x0000000000007fd8                operator new[](unsigned long)
- .text._ZdlPv   0x000000000000800c        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
-                0x000000000000800c                operator delete(void*)
- .text._ZdaPv   0x0000000000008010        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
-                0x0000000000008010                operator delete[](void*)
+                0x0000000000007e20                readMic(pcm*, char*, unsigned int)
+                0x0000000000007e88                closeMic(pcm*)
+                0x0000000000007ea4                splitSamples(int*, int**)
+ .text          0x0000000000007fa8       0x80 android_Debug_aarch64/main.o
+                0x0000000000007fa8                receiveAudioLoop()
+                0x0000000000008010                main
+ .text          0x0000000000008028        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .text._Znwm    0x0000000000008028       0x34 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000008028                operator new(unsigned long)
+ .text._Znam    0x000000000000805c       0x34 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x000000000000805c                operator new[](unsigned long)
+ .text._ZdlPv   0x0000000000008090        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000008090                operator delete(void*)
+ .text._ZdaPv   0x0000000000008094        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000008094                operator delete[](void*)
  .text._ZnwmRKSt9nothrow_t
-                0x0000000000008014        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
-                0x0000000000008014                operator new(unsigned long, std::nothrow_t const&)
+                0x0000000000008098        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x0000000000008098                operator new(unsigned long, std::nothrow_t const&)
  .text._ZnamRKSt9nothrow_t
-                0x0000000000008018        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
-                0x0000000000008018                operator new[](unsigned long, std::nothrow_t const&)
+                0x000000000000809c        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x000000000000809c                operator new[](unsigned long, std::nothrow_t const&)
  .text._ZdlPvRKSt9nothrow_t
-                0x000000000000801c        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
-                0x000000000000801c                operator delete(void*, std::nothrow_t const&)
+                0x00000000000080a0        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x00000000000080a0                operator delete(void*, std::nothrow_t const&)
  .text._ZdaPvRKSt9nothrow_t
-                0x0000000000008020        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
-                0x0000000000008020                operator delete[](void*, std::nothrow_t const&)
- .text          0x0000000000008024        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x00000000000080a4        0x4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x00000000000080a4                operator delete[](void*, std::nothrow_t const&)
+ .text          0x00000000000080a8        0x0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .text._ZL14format_integerPcmmc
-                0x0000000000008024      0x134 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x00000000000080a8      0x134 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .text._ZL22__libc_open_log_socketv
-                0x0000000000008158      0x130 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x00000000000081dc      0x130 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .text._ZL16__libc_write_logiPKcS0_
-                0x0000000000008288      0x1ec /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x000000000000830c      0x1ec /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .text._ZL24__libc_android_log_eventicPKvm.constprop.0
-                0x0000000000008474      0x100 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x00000000000084f8      0x100 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .text._Z10SendRepeatI18BufferOutputStreamEvRT_ci
-                0x0000000000008574       0xf4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x00000000000085f8       0xf4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .text._Z11out_vformatI18BufferOutputStreamEvRT_PKcSt9__va_list
-                0x0000000000008668      0x8c0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x00000000000086ec      0x8c0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .text._Z10SendRepeatI14FdOutputStreamEvRT_ci
-                0x0000000000008f28      0x108 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000008fac      0x108 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .text.__libc_format_buffer
-                0x0000000000009030       0xac /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x0000000000009030                __libc_format_buffer
+                0x00000000000090b4       0xac /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x00000000000090b4                __libc_format_buffer
  .text.__libc_format_fd
-                0x00000000000090dc      0x83c /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x00000000000090dc                __libc_format_fd
+                0x0000000000009160      0x83c /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009160                __libc_format_fd
  .text.__libc_format_log_va_list
-                0x0000000000009918       0xa8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x0000000000009918                __libc_format_log_va_list
+                0x000000000000999c       0xa8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x000000000000999c                __libc_format_log_va_list
  .text.__libc_format_log
-                0x00000000000099c0       0x80 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x00000000000099c0                __libc_format_log
+                0x0000000000009a44       0x80 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009a44                __libc_format_log
  .text.__libc_android_log_event_int
-                0x0000000000009a40       0x20 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x0000000000009a40                __libc_android_log_event_int
+                0x0000000000009ac4       0x20 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009ac4                __libc_android_log_event_int
  .text.__libc_android_log_event_uid
-                0x0000000000009a60       0x30 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x0000000000009a60                __libc_android_log_event_uid
+                0x0000000000009ae4       0x30 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009ae4                __libc_android_log_event_uid
  .text.android_set_abort_message
-                0x0000000000009a90       0xc8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x0000000000009a90                android_set_abort_message
+                0x0000000000009b14       0xc8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009b14                android_set_abort_message
  .text._ZL12__libc_fatalPKcSt9__va_list
-                0x0000000000009b58       0xec /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009bdc       0xec /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .text.__libc_fatal_no_abort
-                0x0000000000009c44       0x88 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x0000000000009c44                __libc_fatal_no_abort
+                0x0000000000009cc8       0x88 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009cc8                __libc_fatal_no_abort
  .text.__libc_fatal
-                0x0000000000009ccc       0x84 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x0000000000009ccc                __libc_fatal
+                0x0000000000009d50       0x84 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009d50                __libc_fatal
  .text.__fortify_chk_fail
-                0x0000000000009d50       0x30 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
-                0x0000000000009d50                __fortify_chk_fail
+                0x0000000000009dd4       0x30 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x0000000000009dd4                __fortify_chk_fail
  *(.gnu.warning)
 
 .fini
  *(SORT(.fini))
-                0x0000000000009d80                PROVIDE (__etext, .)
-                0x0000000000009d80                PROVIDE (_etext, .)
-                0x0000000000009d80                PROVIDE (etext, .)
+                0x0000000000009e04                PROVIDE (__etext, .)
+                0x0000000000009e04                PROVIDE (_etext, .)
+                0x0000000000009e04                PROVIDE (etext, .)
 
-.rodata         0x0000000000009d80      0xca0
+.rodata         0x0000000000009e08      0xca0
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000000009d80       0xd0 android_Debug_aarch64/mixer.o
- .rodata        0x0000000000009e50      0x6d0 android_Debug_aarch64/pcm.o
- .rodata        0x000000000000a520       0x80 android_Debug_aarch64/mics_stub.o
- .rodata        0x000000000000a5a0       0x30 android_Debug_aarch64/audioRecordUtil.o
- .rodata        0x000000000000a5d0       0x30 android_Debug_aarch64/BinarySemaphoreClient.o
- .rodata        0x000000000000a600       0xa8 android_Debug_aarch64/BinarySemaphoreServer.o
- .rodata        0x000000000000a6a8        0x8 android_Debug_aarch64/dspBufferUtil.o
- .rodata        0x000000000000a6b0       0x80 android_Debug_aarch64/fileSystemUtil.o
- .rodata        0x000000000000a730      0x150 android_Debug_aarch64/pcmUtil.o
- .rodata        0x000000000000a880        0x8 android_Debug_aarch64/main.o
+ .rodata        0x0000000000009e08       0xd0 android_Debug_aarch64/mixer.o
+ .rodata        0x0000000000009ed8      0x6d0 android_Debug_aarch64/pcm.o
+ .rodata        0x000000000000a5a8       0x80 android_Debug_aarch64/mics_stub.o
+ .rodata        0x000000000000a628       0x30 android_Debug_aarch64/audioRecordUtil.o
+ .rodata        0x000000000000a658       0x30 android_Debug_aarch64/BinarySemaphoreClient.o
+ .rodata        0x000000000000a688       0xa8 android_Debug_aarch64/BinarySemaphoreServer.o
+ .rodata        0x000000000000a730        0x8 android_Debug_aarch64/dspBufferUtil.o
+ .rodata        0x000000000000a738       0x80 android_Debug_aarch64/fileSystemUtil.o
+ .rodata        0x000000000000a7b8      0x150 android_Debug_aarch64/pcmUtil.o
+ .rodata        0x000000000000a908        0x8 android_Debug_aarch64/main.o
  .rodata.str1.8
-                0x000000000000a888       0x4b /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x000000000000a910       0x4b /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
                                          0x50 (size before relaxing)
- *fill*         0x000000000000a8d3        0x5 
+ *fill*         0x000000000000a95b        0x5 
  .rodata._ZSt7nothrow
-                0x000000000000a8d8        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
-                0x000000000000a8d8                std::nothrow
+                0x000000000000a960        0x8 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+                0x000000000000a960                std::nothrow
  .rodata._Z11out_vformatI18BufferOutputStreamEvRT_PKcSt9__va_list
-                0x000000000000a8e0       0x38 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x000000000000a968       0x38 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
  .rodata.__libc_format_fd
-                0x000000000000a918       0x24 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
- *fill*         0x000000000000a93c        0x4 
+                0x000000000000a9a0       0x24 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ *fill*         0x000000000000a9c4        0x4 
  .rodata.str1.8
-                0x000000000000a940       0xe0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+                0x000000000000a9c8       0xe0 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
 
 .rodata1
  *(.rodata1)
 
-.eh_frame_hdr   0x000000000000aa20      0x1f4
+.eh_frame_hdr   0x000000000000aaa8      0x204
  *(.eh_frame_hdr)
- .eh_frame_hdr  0x000000000000aa20      0x1f4 android_Debug_aarch64/audioRecordUtil.o
+ .eh_frame_hdr  0x000000000000aaa8      0x204 android_Debug_aarch64/audioRecordUtil.o
 
-.eh_frame       0x000000000000ac18      0x9d8
+.eh_frame       0x000000000000acb0      0xa28
  *(.eh_frame)
- .eh_frame      0x000000000000ac18      0x138 android_Debug_aarch64/audioRecordUtil.o
+ .eh_frame      0x000000000000acb0      0x138 android_Debug_aarch64/audioRecordUtil.o
                                         0x120 (size before relaxing)
- .eh_frame      0x000000000000ad50       0xd8 android_Debug_aarch64/BinarySemaphoreClient.o
+ .eh_frame      0x000000000000ade8       0xd8 android_Debug_aarch64/BinarySemaphoreClient.o
                                          0xe0 (size before relaxing)
- .eh_frame      0x000000000000ae28       0xd0 android_Debug_aarch64/BinarySemaphoreServer.o
+ .eh_frame      0x000000000000aec0       0xd0 android_Debug_aarch64/BinarySemaphoreServer.o
                                          0xd8 (size before relaxing)
- .eh_frame      0x000000000000aef8       0x60 android_Debug_aarch64/dspBufferUtil.o
+ .eh_frame      0x000000000000af90       0x60 android_Debug_aarch64/dspBufferUtil.o
                                          0x78 (size before relaxing)
- .eh_frame      0x000000000000af58       0x28 android_Debug_aarch64/fileSystemUtil.o
+ .eh_frame      0x000000000000aff0       0x28 android_Debug_aarch64/fileSystemUtil.o
                                          0x38 (size before relaxing)
- .eh_frame      0x000000000000af80       0x30 android_Debug_aarch64/sharedMemAudio.o
+ .eh_frame      0x000000000000b018       0x30 android_Debug_aarch64/sharedMemAudio.o
                                          0x40 (size before relaxing)
- .eh_frame      0x000000000000afb0       0xb8 android_Debug_aarch64/pcmUtil.o
-                                         0xc0 (size before relaxing)
- .eh_frame      0x000000000000b068       0x50 android_Debug_aarch64/main.o
+ .eh_frame      0x000000000000b048      0x108 android_Debug_aarch64/pcmUtil.o
+ .eh_frame      0x000000000000b150       0x50 android_Debug_aarch64/main.o
                                          0x60 (size before relaxing)
- .eh_frame      0x000000000000b0b8      0x108 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .eh_frame      0x000000000000b1a0      0x108 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
                                          0xe8 (size before relaxing)
- .eh_frame      0x000000000000b1c0      0x430 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .eh_frame      0x000000000000b2a8      0x430 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
                                         0x418 (size before relaxing)
 
 .gcc_except_table
@@ -412,7 +413,7 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
 
 .exception_ranges
  *(.exception_ranges .exception_ranges*)
-                0x000000000000b5f0                . = (ALIGN (0x10000) - ((0x10000 - .) & 0xffff))
+                0x000000000000b6d8                . = (ALIGN (0x10000) - ((0x10000 - .) & 0xffff))
                 0x000000000001b8c0                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
 
 .eh_frame
@@ -650,7 +651,7 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0xdcc8
+.debug_info     0x0000000000000000     0xdd68
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x10a5 android_Debug_aarch64/mixer.o
  .debug_info    0x00000000000010a5     0x2338 android_Debug_aarch64/pcm.o
@@ -661,12 +662,12 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
  .debug_info    0x0000000000007b39      0x260 android_Debug_aarch64/dspBufferUtil.o
  .debug_info    0x0000000000007d99      0x659 android_Debug_aarch64/fileSystemUtil.o
  .debug_info    0x00000000000083f2      0x7ce android_Debug_aarch64/sharedMemAudio.o
- .debug_info    0x0000000000008bc0      0x733 android_Debug_aarch64/pcmUtil.o
- .debug_info    0x00000000000092f3     0x170e android_Debug_aarch64/main.o
- .debug_info    0x000000000000aa01      0x400 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
- .debug_info    0x000000000000ae01     0x2ec7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .debug_info    0x0000000000008bc0      0x7d3 android_Debug_aarch64/pcmUtil.o
+ .debug_info    0x0000000000009393     0x170e android_Debug_aarch64/main.o
+ .debug_info    0x000000000000aaa1      0x400 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_info    0x000000000000aea1     0x2ec7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
 
-.debug_abbrev   0x0000000000000000     0x1f4f
+.debug_abbrev   0x0000000000000000     0x1f78
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x2e1 android_Debug_aarch64/mixer.o
  .debug_abbrev  0x00000000000002e1      0x34d android_Debug_aarch64/pcm.o
@@ -677,12 +678,12 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
  .debug_abbrev  0x0000000000000fda       0x8f android_Debug_aarch64/dspBufferUtil.o
  .debug_abbrev  0x0000000000001069      0x17f android_Debug_aarch64/fileSystemUtil.o
  .debug_abbrev  0x00000000000011e8      0x19b android_Debug_aarch64/sharedMemAudio.o
- .debug_abbrev  0x0000000000001383      0x152 android_Debug_aarch64/pcmUtil.o
- .debug_abbrev  0x00000000000014d5      0x315 android_Debug_aarch64/main.o
- .debug_abbrev  0x00000000000017ea      0x17e /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
- .debug_abbrev  0x0000000000001968      0x5e7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .debug_abbrev  0x0000000000001383      0x17b android_Debug_aarch64/pcmUtil.o
+ .debug_abbrev  0x00000000000014fe      0x315 android_Debug_aarch64/main.o
+ .debug_abbrev  0x0000000000001813      0x17e /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_abbrev  0x0000000000001991      0x5e7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
 
-.debug_line     0x0000000000000000     0x3e91
+.debug_line     0x0000000000000000     0x3e99
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x4b5 android_Debug_aarch64/mixer.o
  .debug_line    0x00000000000004b5      0x87b android_Debug_aarch64/pcm.o
@@ -693,10 +694,10 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
  .debug_line    0x0000000000002056      0x169 android_Debug_aarch64/dspBufferUtil.o
  .debug_line    0x00000000000021bf      0x307 android_Debug_aarch64/fileSystemUtil.o
  .debug_line    0x00000000000024c6      0x33b android_Debug_aarch64/sharedMemAudio.o
- .debug_line    0x0000000000002801      0x34c android_Debug_aarch64/pcmUtil.o
- .debug_line    0x0000000000002b4d      0x5b7 android_Debug_aarch64/main.o
- .debug_line    0x0000000000003104      0x1d9 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
- .debug_line    0x00000000000032dd      0xbb4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .debug_line    0x0000000000002801      0x354 android_Debug_aarch64/pcmUtil.o
+ .debug_line    0x0000000000002b55      0x5b7 android_Debug_aarch64/main.o
+ .debug_line    0x000000000000310c      0x1d9 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_line    0x00000000000032e5      0xbb4 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
 
 .debug_frame    0x0000000000000000      0xfe8
  *(.debug_frame)
@@ -704,7 +705,7 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
  .debug_frame   0x0000000000000448      0x9c8 android_Debug_aarch64/pcm.o
  .debug_frame   0x0000000000000e10      0x1d8 android_Debug_aarch64/mics_stub.o
 
-.debug_str      0x0000000000000000     0x350c
+.debug_str      0x0000000000000000     0x354c
  *(.debug_str)
  .debug_str     0x0000000000000000      0x603 android_Debug_aarch64/mixer.o
                                         0x703 (size before relaxing)
@@ -724,13 +725,13 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/andr
                                         0x30f (size before relaxing)
  .debug_str     0x0000000000002817      0x10f android_Debug_aarch64/sharedMemAudio.o
                                         0x3f6 (size before relaxing)
- .debug_str     0x0000000000002926      0x175 android_Debug_aarch64/pcmUtil.o
-                                        0x604 (size before relaxing)
- .debug_str     0x0000000000002a9b       0x5f android_Debug_aarch64/main.o
+ .debug_str     0x0000000000002926      0x1b5 android_Debug_aarch64/pcmUtil.o
+                                        0x650 (size before relaxing)
+ .debug_str     0x0000000000002adb       0x5f android_Debug_aarch64/main.o
                                         0xd5a (size before relaxing)
- .debug_str     0x0000000000002afa      0x2b7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
+ .debug_str     0x0000000000002b3a      0x2b7 /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(new.o)
                                         0x376 (size before relaxing)
- .debug_str     0x0000000000002db1      0x75b /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
+ .debug_str     0x0000000000002df1      0x75b /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a(libc_logging.o)
                                         0xc53 (size before relaxing)
 
 .debug_loc      0x0000000000000000     0x5bee

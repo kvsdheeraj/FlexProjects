@@ -130,64 +130,26 @@ struct pcm *openInputAudio(
     return pcm;
 }
 
-/*
-void readMic(
-    snd_pcm_t *micHandle, 
-    void *inputBuffer,
-    snd_pcm_uframes_t numberOfFrames,
-    const char *deviceName)
+
+unsigned int readMic(
+    struct pcm *pcm, 
+    char *buffer,
+    unsigned int size)
 {
-    int err = 0;
-    static char errorMessage1[256] = {'\0'};
-    static char errorMessage2[256] = {'\0'};
-    
-    err = snd_pcm_readi(
-        micHandle, 
-        inputBuffer,
-        numberOfFrames);
-        
-    if( err < 0 )
-    {
-        if (err == -EPIPE)
-        {
-            snprintf(
-                errorMessage1,
-                sizeof errorMessage1,
-                "Error on snd_pcm_readi. PCM device: <%s>, error:<%s>\n",
-                deviceName,
-                snd_strerror(err)
-            );
-        }
-        
-        err = snd_pcm_recover(
-            micHandle,
-            err, 
-            1       //silent mode
-        );
-        if (err < 0)
-        {
-            snprintf(
-                errorMessage2,
-                sizeof errorMessage1,
-                "Error on snd_pcm_readi. PCM device: <%s>, error:<%s>\n",
-                deviceName,
-                snd_strerror(err)
-            );
-        }
+    unsigned int bytes_read = 0;
+
+    while (!pcm_read(pcm, buffer, size)) {
+        bytes_read += size;
     }
 
-    if(errorMessage1[0] != '\0')
-    {
-        fprintf( stderr, errorMessage1 );
-        errorMessage1[0] = '\0';
-    }
-    if(errorMessage2[0] != '\0')
-    {
-        fprintf( stderr, errorMessage2 );
-        errorMessage2[0] = '\0';
-    }
+    return pcm_bytes_to_frames(pcm, bytes_read);
 }
-*/
+
+
+void closeMic(struct pcm *pcm){
+
+    pcm_close(pcm);
+}
 
 bool splitSamples(int *inputBuffer, int **splittedBuffer)
 {
