@@ -9,12 +9,12 @@ struct pcm *openInputAudio(
     int numOfChannels,
     unsigned int sampleRate);
     
-/*unsigned int readMic(
+unsigned int readMic(
     struct pcm *pcm, 
     char *buffer,
-    unsigned int size);*/
+    unsigned int size);
 
-//void closeMic(struct pcm *pcm);
+void closeMic(struct pcm *pcm);
 
 bool splitSamples(
     int *inputBuffer, 
