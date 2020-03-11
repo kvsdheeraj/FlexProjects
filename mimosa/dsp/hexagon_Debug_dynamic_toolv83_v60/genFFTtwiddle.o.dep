@@ -1,0 +1,4 @@
+src/genFFTtwiddle.c:
+inc/typedef.h:
+hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o: src/genFFTtwiddle.c
+hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o: inc/typedef.h

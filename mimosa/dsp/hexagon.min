@@ -21,6 +21,7 @@ libdsp_skel.C_SRCS += src/test_precision.c
 libdsp_skel.C_SRCS += src/floatfft.c
 libdsp_skel.C_SRCS += src/bkfir_c.c
 libdsp_skel.C_SRCS += src/iir_cas_bq_c.c
+libdsp_skel.C_SRCS += src/genFFTtwiddle.c
 libdsp_skel.C_SRCS += src/asm_src/flt_iir_cas_bq.S
 libdsp_skel.C_SRCS += src/asm_src/flt_bkfir.S
 

@@ -27,6 +27,7 @@ hexagon_Debug_dynamic_toolv83_v60/test_precision.o
 hexagon_Debug_dynamic_toolv83_v60/floatfft.o
 hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o
 hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o
+hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o
 hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o
 hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o
 -Wl,--end-group

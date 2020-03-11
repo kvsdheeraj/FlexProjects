@@ -107,6 +107,7 @@ float InputIIR[] =
 
 float States[4] __attribute__((aligned(8)));
 float OutputIIR[NS], ref_outIIR[NS];
+void gentwiddle( cfloat *twiddle, int NP, int log2NP);
 
 extern void flt_IIR_casBiquad_ref(float *in, float *coef, float *states, int nSec, int nsamples, float *out); 
 
@@ -194,6 +195,7 @@ int dsp_fft(){
 		/* test precision of 128-point scaled Float FFT      */
 		/* ------------------------------------------- */
 		Nfft = 128;
+		gentwiddle( fWtwiddles, N, LOG2N);
 		sfpFFT(fInput, Nfft, fWtwiddles, fOutput);
 		fPrecisionCheck( fInput, fOutput, Nfft);
 

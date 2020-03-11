@@ -6,7 +6,7 @@
 # Maximum GP size: 0
 # Link type: Dynamic and Bsymbolic set
 # ABI Page Size: 0x1000
-# CommandLine : /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/hexagon-link -z relro --hash-style=sysv -march=hexagon -mcpu=hexagonv60 -shared -call_shared -G0 -o hexagon_Debug_dynamic_toolv83_v60/libdsp_skel.so /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o -L/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic -L/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0 -L/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60 -L/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib --no-threads -Bsymbolic --wrap=malloc --wrap=calloc --wrap=free --wrap=realloc --wrap=memalign --wrap=__stack_chk_fail -lc -Map=hexagon_Debug_dynamic_toolv83_v60/libdsp_skel.so.map -soname=libdsp_skel.so --start-group hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o hexagon_Debug_dynamic_toolv83_v60/fft.o hexagon_Debug_dynamic_toolv83_v60/ifft.o hexagon_Debug_dynamic_toolv83_v60/fft_util.o hexagon_Debug_dynamic_toolv83_v60/test_precision.o hexagon_Debug_dynamic_toolv83_v60/floatfft.o hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o --end-group --start-group -lgcc --end-group /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o 
+# CommandLine : /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/hexagon-link -z relro --hash-style=sysv -march=hexagon -mcpu=hexagonv60 -shared -call_shared -G0 -o hexagon_Debug_dynamic_toolv83_v60/libdsp_skel.so /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o -L/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic -L/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0 -L/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60 -L/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib --no-threads -Bsymbolic --wrap=malloc --wrap=calloc --wrap=free --wrap=realloc --wrap=memalign --wrap=__stack_chk_fail -lc -Map=hexagon_Debug_dynamic_toolv83_v60/libdsp_skel.so.map -soname=libdsp_skel.so --start-group hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o hexagon_Debug_dynamic_toolv83_v60/fft.o hexagon_Debug_dynamic_toolv83_v60/ifft.o hexagon_Debug_dynamic_toolv83_v60/fft_util.o hexagon_Debug_dynamic_toolv83_v60/test_precision.o hexagon_Debug_dynamic_toolv83_v60/floatfft.o hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o --end-group --start-group -lgcc --end-group /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o 
 
 Allocating common symbols
 Common symbol	size	file
@@ -37,6 +37,7 @@ LOAD hexagon_Debug_dynamic_toolv83_v60/test_precision.o[v60]
 LOAD hexagon_Debug_dynamic_toolv83_v60/floatfft.o[v60]
 LOAD hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o[v60]
 LOAD hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o[v60]
+LOAD hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o[v60]
 LOAD hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o[v60]
 LOAD hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o[v60]
 END GROUP
@@ -45,181 +46,184 @@ LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/
 END GROUP
 LOAD /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o[v60]
 
-.dynsym	0xd4	0x4a0 # Offset: 0xd4, LMA: 0xd4, Alignment: 0x4
+.dynsym	0xd4	0x4c0 # Offset: 0xd4, LMA: 0xd4, Alignment: 0x4
 
-.dynstr	0x574	0x359 # Offset: 0x574, LMA: 0x574, Alignment: 0x1
+.dynstr	0x594	0x369 # Offset: 0x594, LMA: 0x594, Alignment: 0x1
 
-.hash	0x8d0	0x258 # Offset: 0x8d0, LMA: 0x8d0, Alignment: 0x4
+.hash	0x900	0x268 # Offset: 0x900, LMA: 0x900, Alignment: 0x4
 
-.rela.dyn	0xb28	0x12c # Offset: 0xb28, LMA: 0xb28, Alignment: 0x4
+.rela.dyn	0xb68	0x12c # Offset: 0xb68, LMA: 0xb68, Alignment: 0x4
 
-.rela.plt	0xc54	0xfc # Offset: 0xc54, LMA: 0xc54, Alignment: 0x4
+.rela.plt	0xc94	0xfc # Offset: 0xc94, LMA: 0xc94, Alignment: 0x4
 
-.init	0xd60	0x6c # Offset: 0xd60, LMA: 0xd60, Alignment: 0x20
-.init	0xd60	0x6c	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
-	0xd60		_init
+.init	0xda0	0x6c # Offset: 0xda0, LMA: 0xda0, Alignment: 0x20
+.init	0xda0	0x6c	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
+	0xda0		_init
 
-.plt	0xdd0	0x180 # Offset: 0xdd0, LMA: 0xdd0, Alignment: 0x10
+.plt	0xe10	0x180 # Offset: 0xe10, LMA: 0xe10, Alignment: 0x10
 
-.text	0xf60	0x49d4 # Offset: 0xf60, LMA: 0xf60, Alignment: 0x20
-.text.__cxa_finalize_stub	0xf60	0x30	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
-	0xf60		__cxa_finalize_stub
-	0xf88		__dso_handle
-.text	0xf90	0x150	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
-	0xf90		dsp_skel_invoke
-	0x1000		_skel_method
-.text	0x10e0	0xd7c	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
-	0x10e0		diff_time
-	0x1144		dsp_fft
-	0x1de8		_HAP_debug_v2
-PADDING_ALIGNMENT	0x1e5c	0x4	0x0
-.text	0x1e60	0xc48	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
-	0x1e60		sfft16x16
-	0x2484		fft16x16
-PADDING_ALIGNMENT	0x2aa8	0x8	0x0
-.text	0x2ab0	0x624	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
-	0x2ab0		ifft16x16
-PADDING_ALIGNMENT	0x30d4	0xc	0x0
-.text	0x30e0	0x7e0	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
-	0x30e0		bitrev
-	0x3164		cavg
-	0x31f8		cnavg
-	0x329c		sRadix2BTFLY
-	0x32f4		sRadix4BTFLYqv3
-	0x33d0		sRadix4BTFLY
-	0x34ac		Radix2BTFLY
-	0x3500		Radix4BTFLYqv3
-	0x35d8		Radix4BTFLY
-	0x36b0		ifftRadix2BTFLY
-	0x3708		ifftRadix4BTFLYqv3
-	0x37e4		ifftRadix4BTFLY
-.text	0x38c0	0xc58	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
-	0x38c0		PrecisionCheck
-	0x3ff4		fPrecisionCheck
-PADDING_ALIGNMENT	0x4518	0x8	0x0
-.text	0x4520	0xee4	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
-	0x4520		fbitrev
-	0x45a4		fRadix2BTFLY
-	0x4628		fRadix4BTFLY
-	0x4818		sfpFFT
-PADDING_ALIGNMENT	0x5404	0xc	0x0
-.text	0x5410	0x100	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
-	0x5410		flt_bkfir_ref
-.text	0x5510	0x180	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
-	0x5510		flt_IIR_casBiquad_ref
-PADDING_ALIGNMENT	0x5690	0x10	0x0
-.text	0x56a0	0x148	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
-	0x56a0		flt_IIR_casBiquad
-	0x56e0		.IIR_sampLoop
-	0x5700		.IIR_filtLoop
-	0x573c		.IIR_filtLpend
-	0x5794		.IIR_filt_1sample
-	0x57a4		.IIR_filt_1sampleLoop
-PADDING_ALIGNMENT	0x57e8	0x18	0x0
-.text	0x5800	0x134	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
-	0x5800		flt_bkfir
-	0x5840		.flt_bkfir_mainLOOP
-	0x5870		.flt_bkfir_innerLOOP
-	0x58c8		.flt_bkfir_innerLPEND
+.text	0xfa0	0x4fb4 # Offset: 0xfa0, LMA: 0xfa0, Alignment: 0x20
+.text.__cxa_finalize_stub	0xfa0	0x30	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
+	0xfa0		__cxa_finalize_stub
+	0xfc8		__dso_handle
+.text	0xfd0	0x150	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0xfd0		dsp_skel_invoke
+	0x1040		_skel_method
+.text	0x1120	0xd98	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0x1120		diff_time
+	0x1184		dsp_fft
+	0x1e44		_HAP_debug_v2
+PADDING_ALIGNMENT	0x1eb8	0x8	0x0
+.text	0x1ec0	0xc48	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0x1ec0		sfft16x16
+	0x24e4		fft16x16
+PADDING_ALIGNMENT	0x2b08	0x8	0x0
+.text	0x2b10	0x624	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0x2b10		ifft16x16
+PADDING_ALIGNMENT	0x3134	0xc	0x0
+.text	0x3140	0x7e0	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0x3140		bitrev
+	0x31c4		cavg
+	0x3258		cnavg
+	0x32fc		sRadix2BTFLY
+	0x3354		sRadix4BTFLYqv3
+	0x3430		sRadix4BTFLY
+	0x350c		Radix2BTFLY
+	0x3560		Radix4BTFLYqv3
+	0x3638		Radix4BTFLY
+	0x3710		ifftRadix2BTFLY
+	0x3768		ifftRadix4BTFLYqv3
+	0x3844		ifftRadix4BTFLY
+.text	0x3920	0xc58	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0x3920		PrecisionCheck
+	0x4054		fPrecisionCheck
+PADDING_ALIGNMENT	0x4578	0x8	0x0
+.text	0x4580	0xee4	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0x4580		fbitrev
+	0x4604		fRadix2BTFLY
+	0x4688		fRadix4BTFLY
+	0x4878		sfpFFT
+PADDING_ALIGNMENT	0x5464	0xc	0x0
+.text	0x5470	0x100	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0x5470		flt_bkfir_ref
+.text	0x5570	0x180	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0x5570		flt_IIR_casBiquad_ref
+.text	0x56f0	0x5b4	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,16
+	0x56f0		brev
+	0x5774		gentwiddle
+PADDING_ALIGNMENT	0x5ca4	0x1c	0x0
+.text	0x5cc0	0x148	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
+	0x5cc0		flt_IIR_casBiquad
+	0x5d00		.IIR_sampLoop
+	0x5d20		.IIR_filtLoop
+	0x5d5c		.IIR_filtLpend
+	0x5db4		.IIR_filt_1sample
+	0x5dc4		.IIR_filt_1sampleLoop
+PADDING_ALIGNMENT	0x5e08	0x18	0x0
+.text	0x5e20	0x134	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
+	0x5e20		flt_bkfir
+	0x5e60		.flt_bkfir_mainLOOP
+	0x5e90		.flt_bkfir_innerLOOP
+	0x5ee8		.flt_bkfir_innerLPEND
 
-.fini	0x5940	0x44 # Offset: 0x5940, LMA: 0x5940, Alignment: 0x20
-.fini	0x5940	0x44	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
-	0x5940		_fini
+.fini	0x5f60	0x44 # Offset: 0x5f60, LMA: 0x5f60, Alignment: 0x20
+.fini	0x5f60	0x44	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_EXECINSTR,32
+	0x5f60		_fini
 
-.rodata	0x5988	0x395 # Offset: 0x5988, LMA: 0x5988, Alignment: 0x8
-.rodata.methodStringsArrays	0x5988	0x2	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC,2
-	0x5988		methodStringsArrays
-.rodata.methodStrings	0x598a	0x2	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC,2
-	0x598a		methodStrings
-.rodata.strings	0x598c	0x5	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC,1
-	0x598c		strings
-PADDING_ALIGNMENT	0x5991	0x7	0x0
-.rodata.methods	0x5998	0x1c	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC,8
-	0x5998		methods
-.rodata.str1.1	0x59b4	0xa	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x59b4		.L.str
-.rodata.str1.1	0x59be	0x31	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x59be		.L.str.1
-.rodata.str1.1	0x59ef	0x1d	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x59ef		.L.str.2
-.rodata.str1.1	0x5a0c	0x3a	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5a0c		.L.str.3
-.rodata.str1.1	0x5a46	0x3a	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5a46		.L.str.4
-.rodata.str1.1	0x5a80	0x1d	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5a80		.L.str.5
-.rodata.str1.1	0x5a9d	0x39	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5a9d		.L.str.6
-.rodata.str1.1	0x5ad6	0x1c	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5ad6		.L.str.7
-.rodata.str1.1	0x5af2	0x39	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5af2		.L.str.8
-.rodata.str1.1	0x5b2b	0x1c	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5b2b		.L.str.9
-.rodata.str1.1	0x5b47	0x3a	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5b47		.L.str.10
-.rodata.str1.1	0x5b81	0x1d	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5b81		.L.str.11
-.rodata.str1.1	0x5b9e	0x3a	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5b9e		.L.str.12
-.rodata.str1.1	0x5bd8	0x1d	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5bd8		.L.str.13
-.rodata.str1.1	0x5bf5	0x3f	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5bf5		.L.str.14
-.rodata.str1.1	0x5c34	0x22	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5c34		.L.str.15
-.rodata.str1.1	0x5c56	0x3f	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5c56		.L.str.16
-.rodata.str1.1	0x5c95	0x22	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5c95		.L.str.17
-.rodata.str1.1	0x5cb7	0xc	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5cb7		.L.str.18
-.rodata.str1.1	0x5cc3	0x16	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5cc3		.L.str
-.rodata.str1.1	0x5cd9	0x2b	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5cd9		.L.str.1
-.rodata.str1.1	0x5d04	0x19	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
-	0x5d04		.L.str.2
+.rodata	0x5fa8	0x395 # Offset: 0x5fa8, LMA: 0x5fa8, Alignment: 0x8
+.rodata.methodStringsArrays	0x5fa8	0x2	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC,2
+	0x5fa8		methodStringsArrays
+.rodata.methodStrings	0x5faa	0x2	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC,2
+	0x5faa		methodStrings
+.rodata.strings	0x5fac	0x5	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC,1
+	0x5fac		strings
+PADDING_ALIGNMENT	0x5fb1	0x7	0x0
+.rodata.methods	0x5fb8	0x1c	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC,8
+	0x5fb8		methods
+.rodata.str1.1	0x5fd4	0xa	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x5fd4		.L.str
+.rodata.str1.1	0x5fde	0x31	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x5fde		.L.str.1
+.rodata.str1.1	0x600f	0x1d	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x600f		.L.str.2
+.rodata.str1.1	0x602c	0x3a	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x602c		.L.str.3
+.rodata.str1.1	0x6066	0x3a	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x6066		.L.str.4
+.rodata.str1.1	0x60a0	0x1d	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x60a0		.L.str.5
+.rodata.str1.1	0x60bd	0x39	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x60bd		.L.str.6
+.rodata.str1.1	0x60f6	0x1c	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x60f6		.L.str.7
+.rodata.str1.1	0x6112	0x39	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x6112		.L.str.8
+.rodata.str1.1	0x614b	0x1c	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x614b		.L.str.9
+.rodata.str1.1	0x6167	0x3a	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x6167		.L.str.10
+.rodata.str1.1	0x61a1	0x1d	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x61a1		.L.str.11
+.rodata.str1.1	0x61be	0x3a	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x61be		.L.str.12
+.rodata.str1.1	0x61f8	0x1d	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x61f8		.L.str.13
+.rodata.str1.1	0x6215	0x3f	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x6215		.L.str.14
+.rodata.str1.1	0x6254	0x22	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x6254		.L.str.15
+.rodata.str1.1	0x6276	0x3f	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x6276		.L.str.16
+.rodata.str1.1	0x62b5	0x22	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x62b5		.L.str.17
+.rodata.str1.1	0x62d7	0xc	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x62d7		.L.str.18
+.rodata.str1.1	0x62e3	0x16	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x62e3		.L.str
+.rodata.str1.1	0x62f9	0x2b	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x62f9		.L.str.1
+.rodata.str1.1	0x6324	0x19	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,SHF_ALLOC|SHF_MERGE|SHF_STRINGS,1
+	0x6324		.L.str.2
 
-.eh_frame	0x5d20	0x4 # Offset: 0x5d20, LMA: 0x5d20, Alignment: 0x20
-.eh_frame	0x5d20	0x4	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o	#SHT_PROGBITS,SHF_ALLOC,1
-	0x5d20		__EH_FRAME_END__
+.eh_frame	0x6340	0x4 # Offset: 0x6340, LMA: 0x6340, Alignment: 0x20
+.eh_frame	0x6340	0x4	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o	#SHT_PROGBITS,SHF_ALLOC,1
+	0x6340		__EH_FRAME_END__
 
-.data.rel.ro	0x6000	0x20 # Offset: 0x6000, LMA: 0x6000, Alignment: 0x4
-.data.rel.ro.methodArrays	0x6000	0x4	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,4
-	0x6000		methodArrays
-.data.rel.ro.dsp_slim	0x6004	0x1c	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,4
-	0x6004		dsp_slim
+.data.rel.ro	0x7000	0x20 # Offset: 0x7000, LMA: 0x7000, Alignment: 0x4
+.data.rel.ro.methodArrays	0x7000	0x4	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,4
+	0x7000		methodArrays
+.data.rel.ro.dsp_slim	0x7004	0x1c	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,4
+	0x7004		dsp_slim
 
-.ctors	0x6020	0x8 # Offset: 0x6020, LMA: 0x6020, Alignment: 0x4
-.ctors	0x6020	0x4	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,4
-	0x6020		__CTOR_LIST__
-.ctors	0x6024	0x4	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,1
-	0x6024		__CTOR_END__
+.ctors	0x7020	0x8 # Offset: 0x7020, LMA: 0x7020, Alignment: 0x4
+.ctors	0x7020	0x4	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,4
+	0x7020		__CTOR_LIST__
+.ctors	0x7024	0x4	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,1
+	0x7024		__CTOR_END__
 
-.dtors	0x6028	0xc # Offset: 0x6028, LMA: 0x6028, Alignment: 0x4
-.dtors	0x6028	0x8	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,4
-	0x6028		__DTOR_LIST__
-.dtors	0x6030	0x4	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,1
-	0x6030		__DTOR_END__
+.dtors	0x7028	0xc # Offset: 0x7028, LMA: 0x7028, Alignment: 0x4
+.dtors	0x7028	0x8	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/initS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,4
+	0x7028		__DTOR_LIST__
+.dtors	0x7030	0x4	/home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/HEXAGON_Tools/8.3.02/Tools/bin/../target/hexagon/lib/v60/G0/pic/finiS.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,1
+	0x7030		__DTOR_END__
 
-.dynamic	0x6034	0xb0 # Offset: 0x6034, LMA: 0x6034, Alignment: 0x4
+.dynamic	0x7034	0xb0 # Offset: 0x7034, LMA: 0x7034, Alignment: 0x4
 
-.got	0x60e4	0x4c # Offset: 0x60e4, LMA: 0x60e4, Alignment: 0x4
+.got	0x70e4	0x4c # Offset: 0x70e4, LMA: 0x70e4, Alignment: 0x4
 
-.got.plt	0x7130	0x64 # Offset: 0x7130, LMA: 0x7130, Alignment: 0x8
+.got.plt	0x8130	0x64 # Offset: 0x8130, LMA: 0x8130, Alignment: 0x8
 
-.data	0x7198	0x3324 # Offset: 0x7198, LMA: 0x7198, Alignment: 0x8
-.data.Wtwiddles	0x7198	0x3000	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
-	0x7198		Wtwiddles
-.data.coeffs	0xa198	0x40	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
-	0xa198		coeffs
-.data.input	0xa1d8	0x180	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
-	0xa1d8		input
-.data.Coeffs	0xa358	0x20	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
-	0xa358		Coeffs
-.data.InputIIR	0xa378	0x144	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
-	0xa378		InputIIR
+.data	0x8198	0x3324 # Offset: 0x8198, LMA: 0x8198, Alignment: 0x8
+.data.Wtwiddles	0x8198	0x3000	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
+	0x8198		Wtwiddles
+.data.coeffs	0xb198	0x40	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
+	0xb198		coeffs
+.data.input	0xb1d8	0x180	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
+	0xb1d8		input
+.data.Coeffs	0xb358	0x20	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
+	0xb358		Coeffs
+.data.InputIIR	0xb378	0x144	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,SHF_ALLOC|SHF_WRITE,8
+	0xb378		InputIIR
 
 .bss	0x10000	0x24000 # Offset: 0x10000, LMA: 0x10000, Alignment: 0x10000
 .bss	0x10000	0x400	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_NOBITS,SHF_ALLOC|SHF_WRITE,8
@@ -250,7 +254,7 @@ PADDING_ALIGNMENT	0x20400	0xfc00	0x0
 .bss	0x30000	0x4000	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_NOBITS,SHF_ALLOC|SHF_WRITE,65536
 	0x30000		fInput
 
-.debug_info	0x10000	0x1dad # Offset: 0x10000, Alignment: 0x1
+.debug_info	0x10000	0x1f40 # Offset: 0x10000, Alignment: 0x1
 .debug_info	0x10000	0x94c	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
 .debug_info	0x1094c	0x3c4	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
 .debug_info	0x10d10	0x21b	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
@@ -260,100 +264,111 @@ PADDING_ALIGNMENT	0x20400	0xfc00	0x0
 .debug_info	0x1174f	0x221	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
 .debug_info	0x11970	0xc6	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
 .debug_info	0x11a36	0xf4	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
-.debug_info	0x11b2a	0x162	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,,1
-.debug_info	0x11c8c	0x121	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,,1
+.debug_info	0x11b2a	0x193	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,,1
+.debug_info	0x11cbd	0x162	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,,1
+.debug_info	0x11e1f	0x121	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,,1
 
-.debug_str	0x11dad	0x8ec # Offset: 0x11dad, Alignment: 0x1
-.debug_str	0x11dad	0x3d	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_MERGE|SHF_STRINGS,1
+.debug_str	0x11f40	0x93f # Offset: 0x11f40, Alignment: 0x1
+.debug_str	0x11f40	0x3d	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,SHF_MERGE|SHF_STRINGS,1
 
-.debug_abbrev	0x12699	0x5da # Offset: 0x12699, Alignment: 0x1
-.debug_abbrev	0x12699	0x141	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x127da	0xfc	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x128d6	0x84	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x1295a	0x84	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x129de	0x80	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x12a5e	0x69	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x12ac7	0x9b	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x12b62	0x65	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x12bc7	0x5c	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x12c23	0x28	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,,1
-.debug_abbrev	0x12c4b	0x28	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x1287f	0x691 # Offset: 0x1287f, Alignment: 0x1
+.debug_abbrev	0x1287f	0x141	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x129c0	0xfc	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12abc	0x84	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12b40	0x84	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12bc4	0x80	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12c44	0x69	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12cad	0x9b	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12d48	0x65	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12dad	0x5c	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12e09	0xb7	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12ec0	0x28	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,,1
+.debug_abbrev	0x12ee8	0x28	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,,1
 
-.debug_aranges	0x12c73	0x218 # Offset: 0x12c73, Alignment: 0x1
-.debug_aranges	0x12c73	0x50	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12cc3	0xa8	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12d6b	0x20	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12d8b	0x20	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12dab	0x20	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12dcb	0x20	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12deb	0x20	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12e0b	0x20	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12e2b	0x20	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12e4b	0x20	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,,1
-.debug_aranges	0x12e6b	0x20	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,,1
+.debug_aranges	0x12f10	0x238 # Offset: 0x12f10, Alignment: 0x1
+.debug_aranges	0x12f10	0x50	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
+.debug_aranges	0x12f60	0xa8	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
+.debug_aranges	0x13008	0x20	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
+.debug_aranges	0x13028	0x20	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
+.debug_aranges	0x13048	0x20	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
+.debug_aranges	0x13068	0x20	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
+.debug_aranges	0x13088	0x20	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
+.debug_aranges	0x130a8	0x20	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
+.debug_aranges	0x130c8	0x20	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
+.debug_aranges	0x130e8	0x20	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,,1
+.debug_aranges	0x13108	0x20	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,,1
+.debug_aranges	0x13128	0x20	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,,1
 
-.debug_macinfo	0x12e8b	0x9 # Offset: 0x12e8b, Alignment: 0x1
-.debug_macinfo	0x12e8b	0x1	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
-.debug_macinfo	0x12e8c	0x1	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
-.debug_macinfo	0x12e8d	0x1	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
-.debug_macinfo	0x12e8e	0x1	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
-.debug_macinfo	0x12e8f	0x1	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
-.debug_macinfo	0x12e90	0x1	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
-.debug_macinfo	0x12e91	0x1	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
-.debug_macinfo	0x12e92	0x1	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
-.debug_macinfo	0x12e93	0x1	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x13148	0xa # Offset: 0x13148, Alignment: 0x1
+.debug_macinfo	0x13148	0x1	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x13149	0x1	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x1314a	0x1	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x1314b	0x1	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x1314c	0x1	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x1314d	0x1	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x1314e	0x1	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x1314f	0x1	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x13150	0x1	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
+.debug_macinfo	0x13151	0x1	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,,1
 
-.debug_pubnames	0x12e94	0x3a1 # Offset: 0x12e94, Alignment: 0x1
-.debug_pubnames	0x12e94	0x97	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
-.debug_pubnames	0x12f2b	0x111	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
-.debug_pubnames	0x1303c	0x2d	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
-.debug_pubnames	0x13069	0x20	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
-.debug_pubnames	0x13089	0xd8	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
-.debug_pubnames	0x13161	0x39	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
-.debug_pubnames	0x1319a	0x4b	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
-.debug_pubnames	0x131e5	0x24	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
-.debug_pubnames	0x13209	0x2c	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x13152	0x3cb # Offset: 0x13152, Alignment: 0x1
+.debug_pubnames	0x13152	0x97	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x131e9	0x111	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x132fa	0x2d	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x13327	0x20	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x13347	0xd8	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x1341f	0x39	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x13458	0x4b	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x134a3	0x24	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x134c7	0x2c	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
+.debug_pubnames	0x134f3	0x2a	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,,1
 
-.debug_pubtypes	0x13235	0x445 # Offset: 0x13235, Alignment: 0x1
-.debug_pubtypes	0x13235	0x1eb	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
-.debug_pubtypes	0x13420	0xcf	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
-.debug_pubtypes	0x134ef	0x28	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
-.debug_pubtypes	0x13517	0x28	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
-.debug_pubtypes	0x1353f	0x48	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
-.debug_pubtypes	0x13587	0x7a	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
-.debug_pubtypes	0x13601	0x31	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
-.debug_pubtypes	0x13632	0x24	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
-.debug_pubtypes	0x13656	0x24	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x1351d	0x49c # Offset: 0x1351d, Alignment: 0x1
+.debug_pubtypes	0x1351d	0x1eb	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x13708	0xcf	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x137d7	0x28	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x137ff	0x28	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x13827	0x48	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x1386f	0x7a	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x138e9	0x31	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x1391a	0x24	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x1393e	0x24	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
+.debug_pubtypes	0x13962	0x57	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,,1
 
-.comment	0x1367a	0x69 # Offset: 0x1367a, Alignment: 0x1
-.comment	0x136b8	0x2b	Linker Version	#SHT_PROGBITS,SHF_MERGE|SHF_STRINGS,1
+.comment	0x139b9	0x69 # Offset: 0x139b9, Alignment: 0x1
+.comment	0x139f7	0x2b	Linker Version	#SHT_PROGBITS,SHF_MERGE|SHF_STRINGS,1
 
-.debug_frame	0x136e4	0x354 # Offset: 0x136e4, Alignment: 0x4
-.debug_frame	0x136e4	0x44	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,4
-.debug_frame	0x13728	0x5c	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,4
-.debug_frame	0x13784	0x44	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,4
-.debug_frame	0x137c8	0x2c	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,4
-.debug_frame	0x137f4	0x134	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,4
-.debug_frame	0x13928	0x44	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,4
-.debug_frame	0x1396c	0x74	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,4
-.debug_frame	0x139e0	0x2c	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,4
-.debug_frame	0x13a0c	0x2c	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,4
+.debug_frame	0x13a24	0x398 # Offset: 0x13a24, Alignment: 0x4
+.debug_frame	0x13a24	0x44	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,4
+.debug_frame	0x13a68	0x5c	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,4
+.debug_frame	0x13ac4	0x44	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,4
+.debug_frame	0x13b08	0x2c	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,4
+.debug_frame	0x13b34	0x134	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,4
+.debug_frame	0x13c68	0x44	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,4
+.debug_frame	0x13cac	0x74	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,4
+.debug_frame	0x13d20	0x2c	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,4
+.debug_frame	0x13d4c	0x2c	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,4
+.debug_frame	0x13d78	0x44	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,,4
 
-.debug_line	0x13a38	0x2b77 # Offset: 0x13a38, Alignment: 0x1
-.debug_line	0x13a38	0x1d8	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
-.debug_line	0x13c10	0x652	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
-.debug_line	0x14262	0x946	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
-.debug_line	0x14ba8	0x4c7	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
-.debug_line	0x1506f	0x4a8	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
-.debug_line	0x15517	0x516	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
-.debug_line	0x15a2d	0x7a3	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
-.debug_line	0x161d0	0xe2	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
-.debug_line	0x162b2	0x140	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
-.debug_line	0x163f2	0xe6	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,,1
-.debug_line	0x164d8	0xd7	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,,1
+.debug_line	0x13dbc	0x2e9d # Offset: 0x13dbc, Alignment: 0x1
+.debug_line	0x13dbc	0x1d8	hexagon_Debug_dynamic_toolv83_v60/dsp_skel.o	#SHT_PROGBITS,,1
+.debug_line	0x13f94	0x655	hexagon_Debug_dynamic_toolv83_v60/dsp_imp.o	#SHT_PROGBITS,,1
+.debug_line	0x145e9	0x946	hexagon_Debug_dynamic_toolv83_v60/fft.o	#SHT_PROGBITS,,1
+.debug_line	0x14f2f	0x4c7	hexagon_Debug_dynamic_toolv83_v60/ifft.o	#SHT_PROGBITS,,1
+.debug_line	0x153f6	0x4a8	hexagon_Debug_dynamic_toolv83_v60/fft_util.o	#SHT_PROGBITS,,1
+.debug_line	0x1589e	0x516	hexagon_Debug_dynamic_toolv83_v60/test_precision.o	#SHT_PROGBITS,,1
+.debug_line	0x15db4	0x7a3	hexagon_Debug_dynamic_toolv83_v60/floatfft.o	#SHT_PROGBITS,,1
+.debug_line	0x16557	0xe2	hexagon_Debug_dynamic_toolv83_v60/bkfir_c.o	#SHT_PROGBITS,,1
+.debug_line	0x16639	0x140	hexagon_Debug_dynamic_toolv83_v60/iir_cas_bq_c.o	#SHT_PROGBITS,,1
+.debug_line	0x16779	0x323	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,,1
+.debug_line	0x16a9c	0xe6	hexagon_Debug_dynamic_toolv83_v60/flt_iir_cas_bq.o	#SHT_PROGBITS,,1
+.debug_line	0x16b82	0xd7	hexagon_Debug_dynamic_toolv83_v60/flt_bkfir.o	#SHT_PROGBITS,,1
 
-.shstrtab	0x165af	0x130 # Offset: 0x165af, Alignment: 0x1
+.debug_loc	0x16c59	0x7c # Offset: 0x16c59, Alignment: 0x1
+.debug_loc	0x16c59	0x7c	hexagon_Debug_dynamic_toolv83_v60/genFFTtwiddle.o	#SHT_PROGBITS,,1
 
-.symtab	0x166e0	0x980 # Offset: 0x166e0, Alignment: 0x4
+.shstrtab	0x16cd5	0x13b # Offset: 0x16cd5, Alignment: 0x1
 
-.strtab	0x17060	0x6b0 # Offset: 0x17060, Alignment: 0x1
+.symtab	0x16e10	0x9c0 # Offset: 0x16e10, Alignment: 0x4
+
+.strtab	0x177d0	0x6db # Offset: 0x177d0, Alignment: 0x1
